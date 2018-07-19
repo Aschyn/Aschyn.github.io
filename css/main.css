@@ -183,7 +183,7 @@ footer {
     footer div ul a {
       color: #ef6817; }
 
-@media (max-width: 568px) {
+@media (max-width: 400px) {
   #globalNav #projNav {
     margin-left: 2vh !important; }
   #globalNav #contNav {
