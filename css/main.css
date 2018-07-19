@@ -198,14 +198,12 @@ footer {
     font-size: 8vw; }
   #cover #intro {
     font-size: 5vw; }
-  #cover{
-    font-size: 4vw;
+  #cover #bio{
+    font-size: 5vw;
     margin-top: 5vw; }
-   #bio {
-     font-size: 5vw;
-   }
 
   #work .projCard {
+    background-color: green;
     width: 90vw;
     height: 75vw; }
     #work .projCard img {
@@ -231,6 +229,7 @@ footer {
       margin-top: 5vh; }
 
   #work .projCard {
+      background-color: yellow;
       width: 90vw;
       height: 65vw; }
   #work .projCard img {
