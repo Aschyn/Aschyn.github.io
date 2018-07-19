@@ -74,7 +74,7 @@ html {
   padding: 0; }
 
 #cover {
-  height: 100vh;
+  height: 110vh;
   background: black;
   background: rgba(0, 0, 0, 0.4);
   overflow: hidden;
@@ -183,31 +183,6 @@ footer {
     footer div ul a {
       color: #ef6817; }
 
-@media (max-width: 1440px) {
-  #globalNav #projNav {
-    margin-left: 2vh !important; }
-  #globalNav #contNav {
-    margin-left: 2vh !important;
-    padding-left: 2vh !important; }
-
-  #cover #picture {
-    background-color: black;
-    height: 30vw;
-    width: 30vw; }
-  #cover #name {
-    font-size: 8vw; }
-  #cover #intro {
-    font-size: 5vw; }
-  #cover #bio{
-    font-size: 5vw;
-    margin-top: 5vw; }
-
-  #work .projCard {
-    background-color: green;
-    width: 90vw;
-    height: 75vw; }
-    #work .projCard img {
-      height: 70%; } }
 
 @media (max-width: 1000px) {
   #globalNav #projNav {
@@ -218,18 +193,17 @@ footer {
 
   #cover #picture {
       background-color: black;
-      height: 30vw;
-      width: 30vw; }
+      height: 20vw;
+      width: 20vw; }
   #cover #name {
       font-size: 10vw; }
   #cover #intro {
-      font-size: 5vw; }
+      font-size: 3vw; }
   #cover #bio {
-      font-size: 4vh;
-      margin-top: 5vh; }
+      font-size: 4vw;
+      margin-top: 2vh; }
 
   #work .projCard {
-      background-color: yellow;
       width: 90vw;
       height: 65vw; }
   #work .projCard img {
