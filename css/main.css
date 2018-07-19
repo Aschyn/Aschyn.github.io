@@ -26,7 +26,7 @@ body {
 #globalNav {
   width: 100vw;
   height: 5vh;
-  background-color: #21201f;
+  background-color: green;
   margin: 0 !important;
   padding: 0 !important;
   position: fixed !important;
