@@ -183,7 +183,7 @@ footer {
     footer div ul a {
       color: #ef6817; }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   #globalNav #projNav {
     margin-left: 2vh !important; }
   #globalNav #contNav {
@@ -197,14 +197,14 @@ footer {
   #cover #name {
     font-size: 10vw; }
   #cover #intro {
-    font-size: 8vw; }
+    font-size: 5vw; }
   #cover #bio {
     font-size: 4vh;
     margin-top: 5vh; }
 
   #work .projCard {
     width: 90vw;
-    height: 75vw; }
+    height: 65vw; }
     #work .projCard img {
       height: 70%; } }
 @media (max-width: 500px) {
