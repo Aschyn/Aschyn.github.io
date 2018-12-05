@@ -117,7 +117,8 @@ h3{
 #work{
   min-height:100vh;
   position: relative;
-  padding-top:5vh
+  padding-top:5vh;
+  font-family: "Arial Black", Gadget, sans-serif;
 }
 .placeholder{
   display:block;
@@ -155,8 +156,9 @@ h3{
   padding-top:0;
 }
 #contact{
-  padding-top:50%;
-  padding-bottom:50%;
+  padding-top:25%;
+  padding-bottom:25%;
+  font-family: "Arial Black", Gadget, sans-serif;
 }
 @media only screen and (min-width: 768px) {
   .logo-group{
@@ -178,5 +180,8 @@ h3{
   .media-body{
     height: 50%;
     font-size: 1.5em;
+  }
+  .logo-group{
+    margin-top:0%;
   }
 }
