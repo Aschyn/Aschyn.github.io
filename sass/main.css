@@ -1,0 +1,71 @@
+html {
+  background-color: teal;
+  min-height: 100%;
+  display: block; }
+
+#menu_open {
+  font-size: 2em;
+  color: white;
+  opacity: .8;
+  display: inline;
+  position: fixed;
+  top: 5px;
+  left: 5px; }
+
+#menu {
+  z-index: 10;
+  width: 0vw;
+  height: 100vh;
+  background-color: cyan;
+  position: fixed;
+  transition: width 1s; }
+  #menu #close {
+    position: absolute;
+    font-size: 2em;
+    right: 5vw;
+    top: 0; }
+  #menu .item {
+    overflow: hidden;
+    display: block;
+    height: 20vh;
+    font-size: 5em;
+    color: #260026;
+    text-align: center;
+    line-height: 20vh;
+    background-color: cyan;
+    box-shadow: 0px 5px 12px blue;
+    opacity: 0;
+    transition: opacity 2s, width 1s; }
+  #menu #choiceAbout {
+    margin-bottom: 5vh;
+    margin-top: 14vh; }
+  #menu #choiceWork {
+    margin-bottom: 5vh; }
+
+#landing {
+  z-index: 1;
+  background-color: teal;
+  display: block;
+  min-height: 100vh; }
+  #landing #photo {
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    background-image: url("self.jpg");
+    background-size: cover;
+    display: block;
+    position: absolute;
+    top: 20vh;
+    left: 30vw; }
+
+#intro {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  position: absolute;
+  top: 40vh; }
+
+.page {
+  background-color: teal;
+  min-height: 100vh; }
+
+/*# sourceMappingURL=main.css.map */
