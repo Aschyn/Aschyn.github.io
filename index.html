@@ -26,7 +26,7 @@
   <header>
   <!--Landing Page-->
   <div id="landing">
-      <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3" id="intro"><h2><b>I'm Garrick, a quick-learning front end web developer. Making things work, so you don't have to.</b><h2></div>
+      <div class="d-block mx-auto col-sm-6 col-md-6" id="intro"><h2><b>I'm Garrick, a quick-learning front end web developer. Making things work, so you don't have to.</b><h2></div>
   </div>
   <!--About-->
   <div class="page" id="about">
@@ -46,26 +46,38 @@
   </div>
 </div>
   <!--Work-->
-  <div class="page container pb-2 pt-5" id="work">
-    <div class="jumbotron pb-2 mt-5">
+  <div class="page container-fluid pb-2 pt-5" id="work">
+    <div class="jumbotron pb-5 mt-5 example">
       <h5 class="text-center">Html calculator</h5>
-      <div class="media placeholder"><img src="calculator.jpg" alt="Css Calculator" width="100%" height="100%"></div>
+      <div class="row">
+      <div class="media placeholder col-md-6"><img src="calculator.jpg" alt="Css Calculator" width="100%" height="100%"></div>
+      <div class="group1 d-block mx-auto col-md-6 container-fluid">
       <div class="media-body mt-2 mb-0 text-center"><p>Responsive calculator entirely in the browser.</p></div>
-      <img src="bootstrap.png" alt="" width="40%" height="10%">
-      <img src="HTML5-logo.svg" alt="" width="13%" height="13%">
-      <img src="CSS3-logo.svg" alt="" width="9%" height="9%">
-      <img src="JQuery_logo.svg" alt="" width="30%" height="30%">
+      <div class="logo-group d-block mx-auto row pl-3">
+        <img src="bootstrap.png" alt="" class="img-fluid col-4 col-sm-4" >
+        <img src="HTML5-logo.png" alt="" class="lang-logo col-2 col-sm-2">
+        <img src="CSS-logo.png" alt="" class="lang-logo col-2 col-sm-2">
+        <img src="JQuery_logo.svg" alt="" class="lang-logo col-3 col-sm-3">
     </div>
-    <div class="jumbotron pb-2">
+    </div>
+    </div>
+    </div>
+    <div class="jumbotron pb-5 example">
       <h5 class="text-center">Portfolio Site</h5>
-      <div class="media placeholder"><img src="portfolio_img.jpg" alt="Css Calculator" width="100%" height="100%"></div>
-      <div class="media-body mt-2 mb-0 text-center"><p>Website used to show of my experience and give prospective
+      <div class="row">
+      <div class="media placeholder col-md-6"><img src="portfolio_img.jpg" alt="Css Calculator" width="100%" height="100%"></div>
+      <div class="group1 d-block mx-auto col-md-6 container-fluid">
+      <div class="media-body mt-2 mb-0 text-center "><p>Website used to show of my experience and give prospective
         employers a quick look into my capabilites. Using this site as my introduction into SASS.</p></div>
-      <img src="bootstrap.png" alt="" width="40%" height="10%">
-      <img src="HTML5-logo.svg" alt="" width="13%" height="13%">
-      <img src="CSS3-logo.svg" alt="" width="9%" height="9%">
-      <img src="JQuery_logo.svg" alt="" width="30%" height="30%">
-      <img src="SASS-logo.svg" alt="" class="d-block mx-auto" width="15%" height="15%">
+      <div class="logo-group d-block mx-auto row pl-3">
+      <img src="bootstrap.png" alt="" class="img-fluid col-4 col-sm-4" >
+      <img src="HTML5-logo.png" alt="" class="lang-logo col-2 col-sm-2">
+      <img src="CSS-logo.png" alt="" class="lang-logo col-2 col-sm-2">
+      <img src="JQuery_logo.svg" alt="" class="lang-logo col-3 col-sm-3">
+      <img src="SASS-logo.svg" alt="" class="col-2 lang-logo offset-5 col-sm-2 offset-sm-5">
+    </div>
+    </div>
+    </div>
     </div>
   </div>
   <!--Contact-->

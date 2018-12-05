@@ -111,14 +111,13 @@ h3{
 }
 .placeholder{
   display:block;
-  height: 50vw;
-  width:75vw;
+  height: 50%;
+  width:75%;
   position: relative;
   z-index: 2;
   margin-right: auto;
   margin-left: auto;
   margin-top: 3vh;
-  background-color: black;
 
 }
 .desc{
@@ -135,9 +134,36 @@ h3{
     top:40%;
   }
 }
+.group1{
+  display:block;
+}
 .jumbotron{
   box-shadow: 5px 10px #888888;
+
 }
 #contact{
-  padding-top: 50%;
+  padding-top:50%;
+  padding-bottom:50%;
+}
+@media only screen and (min-width: 768px) {
+  .logo-group{
+    margin-top: 10%;
+  }
+  .placeholder{
+    height:auto;
+  }
+  .example{
+    height:auto;
+  }
+
+.group1{
+  height:auto;
+}
+}
+//@media only screen and (min-width:1000px){.media-body{font-size:2em;}}
+@media only screen and (min-width: 900px){
+  .media-body{
+    height: 50%;
+    font-size: 1.5em;
+  }
 }
