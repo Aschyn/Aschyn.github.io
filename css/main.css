@@ -1,3 +1,11 @@
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+  .no-gutters > .col,
+  .no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0; }
+
 html {
   background-color: teal;
   min-height: 100%;
@@ -128,6 +136,9 @@ h3 {
 
 .jumbotron {
   box-shadow: 5px 10px #888888; }
+
+.notop {
+  padding-top: 0; }
 
 #contact {
   padding-top: 50%;
