@@ -17,9 +17,9 @@
 <body>
   <!--MENU-->
   <header>
-    <div id="menu_open" onclick="openMenu()"><b>O</b></div>
+    <div id="menu_open" onclick="openMenu()"><i class="fas fa-bars"></i></div>
     <div id="menu">
-      <div id="close" onclick="closeMenu()">X</div>
+      <div id="close" onclick="closeMenu()"><i class="fas fa-window-close"></i></div>
       <a href="#about" ><div class="item" id="choiceAbout" onclick="closeMenu()">About</div></a>
       <a href="#work"><div class="item" id="choiceWork" onclick="closeMenu()">Work</div></a>
       <a href="#contact"><div class="item" id="choiceContact" onclick="closeMenu()">Contact</div></a>
@@ -27,7 +27,14 @@
   <header>
   <!--Landing Page-->
   <div id="landing">
-      <div class="d-block mx-auto col-sm-6 col-md-6" id="intro"><h2><b>I'm Garrick, a quick-learning front end web developer. Making things work, so you don't have to.</b><h2></div>
+      <ul class=" mx-auto">
+        <li><a href="https://www.linkedin.com/in/garrick-griffith/"><i class="fab fa-linkedin fa-2x "></i></a></li>
+        <li><a href="https://codepen.io/Aschyn/"><i class="fab fa-codepen fa-2x ml-2 mr-2"></i></a></li>
+        <li><a href="https://github.com/Aschyn"><i class="fab fa-github fa-2x"></i></a></li>
+      </ul>
+      <div class="d-block mx-auto" id="intro">
+        <h2><b>I'm Garrick, a quick-learning front end web developer. Making things work, so you don't have to.</b><h2>
+      </div>
   </div>
   <!--About-->
   <div class="page" id="about">
@@ -96,3 +103,4 @@
     </form>
   </div>
 </body>
+</html>

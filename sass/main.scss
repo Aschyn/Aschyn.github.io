@@ -22,7 +22,10 @@ html{
   position: fixed;
   top: 5px;
   left: 5px;
-  z-index: 10
+  z-index: 10;
+  &:hover{
+    cursor: pointer;
+  }
 }
 #menu{
   z-index: 10;
@@ -32,14 +35,15 @@ html{
   position: fixed;
   transition: width 1s;
   display: block;
-  a:hover{
-    text-decoration: none !important;
-  }
+
   #close{
     position:absolute;
     font-size: 2em;
     right:5vw;
     top:0;
+    &:hover{
+      cursor: pointer;
+    }
   }
     .item{
       overflow: hidden;
@@ -57,6 +61,9 @@ html{
         background-color: rgb(240, 240, 240);
       }
     }
+    a:hover{
+      text-decoration: none;
+        }
   #choiceAbout{margin-bottom: 5vh;margin-top: 14vh;}
   #choiceWork{margin-bottom: 5vh;}
   #choiceContact{}
@@ -70,7 +77,23 @@ html{
   display:block;
   min-height: 100vh;
   color:rgb(220,220,220);
+  ul{
+    position: absolute;
+    top: 15px;
+    right:10px;
+    li{
+      display: inline-block;
+      color:rgb(220,220,220);
+    }
+    a:link{
+      color:rgb(220, 220, 220);
+    }
+    a:hover{
+      color:rgb(150,150,150);
+    }
+  }
 }
+
 #intro{
   padding-left: 3em;
   padding-right: 2em;
@@ -164,6 +187,14 @@ h3{
   padding-top:25%;
   padding-bottom:25%;
   font-family: "Arial Black", Gadget, sans-serif;
+  button{
+    background-color: rgb(100, 100, 100);
+    border-color: rgb(230, 230, 230);
+    &:hover{
+      background-color:  rgb(150, 150, 150);
+      border-color: rgb(230, 230, 230);
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {

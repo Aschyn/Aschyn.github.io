@@ -20,6 +20,8 @@ html {
   top: 5px;
   left: 5px;
   z-index: 10; }
+  #menu_open:hover {
+    cursor: pointer; }
 
 #menu {
   z-index: 10;
@@ -29,13 +31,13 @@ html {
   position: fixed;
   transition: width 1s;
   display: block; }
-  #menu a:hover {
-    text-decoration: none !important; }
   #menu #close {
     position: absolute;
     font-size: 2em;
     right: 5vw;
     top: 0; }
+    #menu #close:hover {
+      cursor: pointer; }
   #menu .item {
     overflow: hidden;
     display: block;
@@ -50,6 +52,8 @@ html {
     transition: opacity 2s, width 1s; }
     #menu .item:hover {
       background-color: #f0f0f0; }
+  #menu a:hover {
+    text-decoration: none; }
   #menu #choiceAbout {
     margin-bottom: 5vh;
     margin-top: 14vh; }
@@ -65,6 +69,17 @@ html {
   display: block;
   min-height: 100vh;
   color: gainsboro; }
+  #landing ul {
+    position: absolute;
+    top: 15px;
+    right: 10px; }
+    #landing ul li {
+      display: inline-block;
+      color: gainsboro; }
+    #landing ul a:link {
+      color: gainsboro; }
+    #landing ul a:hover {
+      color: #969696; }
 
 #intro {
   padding-left: 3em;
@@ -149,6 +164,12 @@ h3 {
   padding-top: 25%;
   padding-bottom: 25%;
   font-family: "Arial Black", Gadget, sans-serif; }
+  #contact button {
+    background-color: #646464;
+    border-color: #e6e6e6; }
+    #contact button:hover {
+      background-color: #969696;
+      border-color: #e6e6e6; }
 
 @media only screen and (min-width: 768px) {
   .logo-group {
