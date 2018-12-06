@@ -13,6 +13,7 @@ html{
   min-height: 100%;
   display: block;
 }
+
 #menu_open{
   font-size: 2em;
   color:white;
@@ -27,10 +28,13 @@ html{
   z-index: 10;
   width: 0vw;
   height: 100vh;
-  background-color: cyan;
+  background-color: rgb(180, 180, 180);
   position: fixed;
   transition: width 1s;
   display: block;
+  a:hover{
+    text-decoration: none !important;
+  }
   #close{
     position:absolute;
     font-size: 2em;
@@ -42,13 +46,16 @@ html{
       display:block;
       height: 20vh;
       font-size: 5em;
-      color: #260026;
+      color: rgb(40,40,40);
       text-align: center;
       line-height: 20vh;
-      background-color:cyan;
-      box-shadow: 0px 5px 12px blue;
+      background-color: rgb(150, 150, 150);
+      box-shadow: 0px 5px 12px rgb(50, 50, 50);
       opacity: 0;
       transition: opacity 2s, width 1s;
+      &:hover{
+        background-color: rgb(240, 240, 240);
+      }
     }
   #choiceAbout{margin-bottom: 5vh;margin-top: 14vh;}
   #choiceWork{margin-bottom: 5vh;}
@@ -85,7 +92,6 @@ html{
    margin-left: auto;
    margin-bottom: .5em;
    display: block;
-
  }
  #interests{
    padding-left: 0;
@@ -150,7 +156,6 @@ h3{
 }
 .jumbotron{
   box-shadow: 5px 10px #888888;
-
 }
 .notop{
   padding-top:0;
@@ -160,20 +165,15 @@ h3{
   padding-bottom:25%;
   font-family: "Arial Black", Gadget, sans-serif;
 }
+
 @media only screen and (min-width: 768px) {
-  .logo-group{
+
+  .logo-group,{
     margin-top: 10%;
   }
-  .placeholder{
+  .placeholder, .example, .group1{
     height:auto;
   }
-  .example{
-    height:auto;
-  }
-
-.group1{
-  height:auto;
-}
 }
 //@media only screen and (min-width:1000px){.media-body{font-size:2em;}}
 @media only screen and (min-width: 900px){
