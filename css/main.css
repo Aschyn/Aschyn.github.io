@@ -75,9 +75,9 @@ html {
     right: 10px; }
     #landing ul li {
       display: inline-block;
-      color: gainsboro; }
+      color: white; }
     #landing ul a:link {
-      color: gainsboro; }
+      color: white; }
     #landing ul a:hover {
       color: #969696; }
 
