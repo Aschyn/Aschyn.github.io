@@ -9,14 +9,20 @@
   }
 }
 .y50{
-  height:50%;
+  -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.5); /* FF3.5+ */
+      -ms-transform: scale(0.5); /* IE9 */
+       -o-transform: scale(0.5); /* Opera 10.5+ */
+          transform: scale(0.5);
+             /* IE6–IE9 */
 }
 .y100{
-  height:100%;
-}
-.xy100{
-  height:100%;
-    width:100%;
+  -webkit-transform: scale(1); /* Saf3.1+, Chrome */
+     -moz-transform: scale(1); /* FF3.5+ */
+      -ms-transform: scale(1); /* IE9 */
+       -o-transform: scale(1); /* Opera 10.5+ */
+          transform: scale(1);
+             /* IE6–IE9 */
 }
 html{
   background-color:teal;
