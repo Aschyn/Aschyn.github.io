@@ -76,10 +76,10 @@ html {
     #landing ul li {
       display: inline-block;
       color: gainsboro; }
-      #landing ul li a:link {
-        color: gainsboro; }
-      #landing ul li a:hover {
-        color: #969696; }
+    #landing ul a:link {
+      color: gainsboro; }
+    #landing ul a:hover {
+      color: #969696; }
 
 #intro {
   padding-left: 3em;
