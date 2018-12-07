@@ -70,6 +70,8 @@ html {
   display: block;
   min-height: 100vh;
   color: gainsboro; }
+  #landing a {
+    color: gainsboro; }
   #landing ul {
     position: absolute;
     top: 15px;
