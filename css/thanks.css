@@ -11,16 +11,16 @@ body{
   width: 100vw;
   vertical-align: middle;
 }
-.thankYou ul a:hover{
+.thankYou ul li a:hover{
     color:rgb(150,150,150);
   }
   li{
     display: inline-block;
   }
-.thankYou ul a:link{
+.thankYou ul li a:link{
     color:rgb(80, 80, 80);
   }
-.thankYou ul a{
+.thankYou ul li a{
   color:rgb(80, 80, 80);
 }
 .thankYou .btn{
