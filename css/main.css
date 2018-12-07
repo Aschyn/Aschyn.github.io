@@ -36,6 +36,12 @@ html {
   min-height: 100%;
   display: block; }
 
+a:link, a:visited {
+  color: gainsboro; }
+
+a:hover, a:active {
+  color: #969696; }
+
 #menu_open {
   font-size: 2em;
   color: white;
@@ -101,10 +107,6 @@ html {
     #landing ul li {
       display: inline-block;
       color: gainsboro; }
-      #landing ul li a:link {
-        color: gainsboro; }
-      #landing ul li a:hover {
-        color: #969696; }
 
 #intro {
   padding-left: 3em;

@@ -29,7 +29,12 @@ html{
   min-height: 100%;
   display: block;
 }
-
+a:link, a:visited{
+  color:rgb(220, 220, 220);
+}
+a:hover, a:active{
+  color:rgb(150,150,150);
+}
 #menu_open{
   font-size: 2em;
   color:white;
@@ -100,12 +105,6 @@ html{
     li{
       display: inline-block;
       color:rgb(220,220,220);
-      a:link{
-        color:rgb(220, 220, 220);
-      }
-      a:hover{
-        color:rgb(150,150,150);
-      }
     }
   }
 }
