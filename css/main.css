@@ -6,6 +6,16 @@
     padding-right: 0;
     padding-left: 0; }
 
+.y50 {
+  height: 50%; }
+
+.y100 {
+  height: 100%; }
+
+.xy100 {
+  height: 100%;
+  width: 100%; }
+
 html {
   background-color: teal;
   min-height: 100%;
