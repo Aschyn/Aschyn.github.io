@@ -4,7 +4,6 @@
 <title>Garrick Griffith</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Source+Sans+Pro" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
@@ -24,7 +23,7 @@
       <a href="#work"><div class="item" id="choiceWork" onclick="closeMenu()">Work</div></a>
       <a href="#contact"><div class="item" id="choiceContact" onclick="closeMenu()">Contact</div></a>
     </div>
-  <header>
+  </header>
   <!--Landing Page-->
   <div id="landing">
       <ul class=" mx-auto">
@@ -33,7 +32,7 @@
         <li><a href="https://github.com/Aschyn"><i class="fab fa-github fa-2x"></i></a></li>
       </ul>
       <div class="d-block mx-auto" id="intro">
-        <h2><b>I'm Garrick, a quick-learning front end web developer. Making things work, so you don't have to.</b><h2>
+        <h2><b>I'm Garrick, a quick-learning front end web developer. Making things work, so you don't have to.</b></h2>
       </div>
   </div>
   <!--About-->
@@ -45,8 +44,8 @@
           I create responsive websites that work on a variety of devices
           using the knowledge I've gained by my associates degree,
           front-end certificate, and self teaching. I primarily utilize HTML5, Bootstrap, CSS, SASS, jquery
-          and JS.</p>
-          <p class="col-xs-12" id="botHalf"> When I'm not working, I'm either gaming, fishing, or geeking out over some
+          and JS.</b></p>
+          <p class="col-xs-12" id="botHalf"> <b>When I'm not working, I'm either gaming, fishing, or geeking out over some
           form of technology.I look forward to expanding my horizons and learning new
           languages and tools that will further refine my skills.
         </b></p>
@@ -59,14 +58,14 @@
     <div class="jumbotron pb-5 mt-5 example" style="background: rgb(245, 245, 245)">
       <h3 class="text-center">Html calculator</h3>
       <div class="row">
-      <div class="media placeholder col-md-6"><img src="calculator.jpg" alt="Css Calculator" width="100%" height="100%"></div>
+      <div class="media placeholder col-md-6"><img src="calculator.jpg" alt="Css Calculator"></div>
       <div class="group1 d-block mx-auto col-md-6 container-fluid">
       <div class="media-body mt-2 mb-0 text-center"><p>Responsive calculator entirely in the browser.</p></div>
       <div class="logo-group row no-gutters">
-        <img src="bootstrap.png" alt="" class="lang-logo col-4 col-sm-4" height="100%">
-        <img src="HTML5-logo.png" alt="" class="lang-logo no-gutters col-2 col-sm-2" height="50%">
-        <img src="CSS-logo.png" alt="" class="lang-logo col-2 col-sm-0" height="50%">
-        <img src="jquery.png" alt="" class="lang-logo col-4 col-sm-3 pt-2"  height="100%">
+        <img src="bootstrap.png" alt="" class="lang-logo col-4 col-sm-4">
+        <img src="HTML5-logo.png" alt="" class="lang-logo no-gutters col-2 col-sm-2">
+        <img src="CSS-logo.png" alt="" class="lang-logo col-2 col-sm-0">
+        <img src="jquery.png" alt="" class="lang-logo col-4 col-sm-3 pt-2">
     </div>
     </div>
     </div>
@@ -74,16 +73,16 @@
     <div class="jumbotron pb-5 example" style="background: rgb(245, 245, 245)">
       <h3 class="text-center">Portfolio Site</h3>
       <div class="row">
-      <div class="media placeholder col-md-6"><img src="portfolio_img.jpg" alt="Css Calculator" width="100%" height="100%"></div>
+      <div class="media placeholder col-md-6"><img src="portfolio_img.jpg" alt="Screenshot of Portfolio"></div>
       <div class="group1 d-block mx-auto col-md-6 container-fluid">
       <div class="media-body mt-2 mb-0 text-center "><p>Website used to show of my experience and give prospective
         employers a quick look into my capabilites. Using this site as my introduction into SASS.</p></div>
       <div class="logo-group row no-gutters ">
-      <img src="bootstrap.png" alt="" class="lang-logo col-4 col-sm-4" height="100%">
-      <img src="HTML5-logo.png" alt="" class="lang-logo no-gutters col-2 col-sm-2" height="50%">
-      <img src="CSS-logo.png" alt="" class="lang-logo col-2 col-sm-0" height="50%">
-      <img src="jquery.png" alt="" class="lang-logo col-4 col-sm-3 pt-2"  height="100%">
-      <img src="sass.png" alt="" class="col-2 lang-logo offset-5 col-sm-2 offset-sm-5 mt-2" height="50%">
+      <img src="bootstrap.png" alt="" class="lang-logo col-4 col-sm-4">
+      <img src="HTML5-logo.png" alt="" class="lang-logo no-gutters col-2 col-sm-2">
+      <img src="CSS-logo.png" alt="" class="lang-logo col-2 col-sm-0">
+      <img src="jquery.png" alt="" class="lang-logo col-4 col-sm-3 pt-2">
+      <img src="sass.png" alt="" class="col-2 lang-logo offset-5 col-sm-2 offset-sm-5 mt-2">
     </div>
     </div>
     </div>
@@ -96,7 +95,7 @@
       <div class="form-group container">
         <input type="text" name="_replyto" class="form-control" placeholder="Your Email">
         <textarea class="form-control" name="message" placeholder="message" rows="10"></textarea>
-        <input type="hidden" name="_subject" value="New submission!"></input>
+        <input type="hidden" name="_subject" value="New submission!"/>
         <input type="hidden" name="_next" value="thanks.html" />
         <button class="btn btn-primary d-block mx-auto mt-3" type="submit" name="submit" value="Send" onclick="thanks()">submit</button>
       </div>
