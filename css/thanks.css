@@ -25,11 +25,11 @@ ul{
     font-size: 3em;
 }
 ul a:hover{
-    color:rgb(150,150,150);
+    color:rgb(150,150,150) !important;
   }
   li{
     display: inline-block;
   }
   a:link{
-    color:rgb(230, 230, 230);
+    color:rgb(230, 230, 230) !important;
   }
