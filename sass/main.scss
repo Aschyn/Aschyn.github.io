@@ -79,7 +79,7 @@ html{
   min-height: 100vh;
   color:rgb(220,220,220);
   a{
-    color:rgb(220,220,220);
+    color:rgb(220,220,220) !important;
   }
   ul{
     position: absolute;
@@ -93,7 +93,7 @@ html{
       color:rgb(220, 220, 220);
     }
     a:hover{
-      color:rgb(150,150,150);
+      color:rgb(150,150,150) !important;
     }
   }
 }

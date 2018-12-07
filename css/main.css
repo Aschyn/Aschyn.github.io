@@ -71,7 +71,7 @@ html {
   min-height: 100vh;
   color: gainsboro; }
   #landing a {
-    color: gainsboro; }
+    color: gainsboro !important; }
   #landing ul {
     position: absolute;
     top: 15px;
@@ -82,7 +82,7 @@ html {
     #landing ul a:link {
       color: gainsboro; }
     #landing ul a:hover {
-      color: #969696; }
+      color: #969696 !important; }
 
 #intro {
   padding-left: 3em;
