@@ -34,8 +34,7 @@
 html {
   background-color: teal;
   min-height: 100%;
-  display: block;
-  overflow-x: hidden; }
+  display: block; }
 
 #menu_open {
   font-size: 2em;
@@ -102,10 +101,10 @@ html {
     #landing ul li {
       display: inline-block;
       color: gainsboro; }
-    #landing ul a:link {
-      color: gainsboro; }
-    #landing ul a:hover {
-      color: #969696; }
+      #landing ul li a:link {
+        color: gainsboro; }
+      #landing ul li a:hover {
+        color: #969696; }
 
 #intro {
   padding-left: 3em;

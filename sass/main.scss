@@ -28,7 +28,6 @@ html{
   background-color:teal;
   min-height: 100%;
   display: block;
-  overflow-x: hidden;
 }
 
 #menu_open{
@@ -101,12 +100,12 @@ html{
     li{
       display: inline-block;
       color:rgb(220,220,220);
-    }
-    a:link{
-      color:rgb(220, 220, 220);
-    }
-    a:hover{
-      color:rgb(150,150,150);
+      a:link{
+        color:rgb(220, 220, 220);
+      }
+      a:hover{
+        color:rgb(150,150,150);
+      }
     }
   }
 }
