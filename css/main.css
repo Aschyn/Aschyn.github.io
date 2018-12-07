@@ -75,11 +75,11 @@ html {
     right: 10px; }
     #landing ul li {
       display: inline-block;
-      color: gainsboro !important; }
-    #landing ul a:link {
-      color: gainsboro !important; }
-    #landing ul a:hover {
-      color: #969696; }
+      color: gainsboro; }
+      #landing ul li a:link {
+        color: gainsboro; }
+      #landing ul li a:hover {
+        color: #969696; }
 
 #intro {
   padding-left: 3em;
