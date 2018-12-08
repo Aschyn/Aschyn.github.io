@@ -14,15 +14,15 @@ html {
 
 #menu_open {
   font-size: 2em;
-  color: white;
-  opacity: .8;
   display: inline;
   position: fixed;
-  top: 5px;
+  color: gainsboro;
+  top: -5px;
   left: 5px;
   z-index: 10; }
   #menu_open:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    color: #969696; }
 
 #menu {
   z-index: 10;
@@ -89,10 +89,11 @@ html {
   padding-right: 2em;
   padding-top: 30vh;
   height: 100vh;
-  z-index: 1; }
+  z-index: 1;
+  text-align: center; }
 
 .page {
-  background-color: #c8c8c8;
+  background-color: #969696;
   min-height: 100vh; }
 
 #about {
@@ -121,9 +122,6 @@ html {
       border-bottom: solid #404040 2px;
       border-left: solid #404040 2px;
       z-index: 0; }
-
-h3 {
-  text-align: center; }
 
 #work {
   min-height: 100vh;

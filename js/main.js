@@ -10,14 +10,11 @@ function closeMenu(){
   $('.item').css('width','0%');
   $('.item').css('opacity','0');
 }
-// Create the measurement node
-var scrollDiv = document.createElement("div");
-scrollDiv.className = "scrollbar-measure";
-$('body').append(scrollDiv);
-
-// Get the scrollbar width
-var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
-console.warn(scrollbarWidth); // Mac:  15
-
-// Delete the DIV
-$('body').remove(scrollDiv);
+$(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if(scroll <= $('#landing').height()){
+        $('#menu_open').css('color', 'rgb(220,220,220)');
+    } else{
+        $('#menu_open').css('color', 'rgb(50,50,50)');
+    }
+});

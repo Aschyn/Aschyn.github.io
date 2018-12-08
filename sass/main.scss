@@ -17,15 +17,15 @@ html{
 
 #menu_open{
   font-size: 2em;
-  color:white;
-  opacity: .8;
   display:inline;
   position: fixed;
-  top: 5px;
+  color: rgb(220,220,220);
+  top:-5px;
   left: 5px;
   z-index: 10;
   &:hover{
     cursor: pointer;
+    color:rgb(150,150,150);
   }
 }
 #menu{
@@ -104,9 +104,10 @@ html{
   padding-top:30vh;
   height: 100vh;
   z-index: 1;
+  text-align: center;
 }
 .page{
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(150, 150, 150);
   min-height:100vh;
 
 }
@@ -143,9 +144,6 @@ html{
 
   }
  }
-}
-h3{
-  text-align: center;
 }
 #work{
   min-height:100vh;
