@@ -6,6 +6,9 @@
     padding-right: 0;
     padding-left: 0; }
 
+.row > div {
+  transition: all .5s ease-in-out; }
+
 html {
   background-color: teal;
   min-height: 100%;
@@ -69,7 +72,8 @@ html {
   background-repeat: no-repeat;
   display: block;
   min-height: 100vh;
-  color: gainsboro; }
+  color: gainsboro;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
   #landing a {
     color: gainsboro !important; }
   #landing ul {
@@ -124,41 +128,84 @@ html {
       z-index: 0; }
 
 #work {
-  min-height: 100vh;
+  min-height: auto;
   position: relative;
   padding-top: 5vh;
   font-family: "Arial Black", Gadget, sans-serif; }
+  #work .jumbotron {
+    box-shadow: 5px 10px #888888; }
+  #work .example {
+    transition: all .5s ease-in-out;
+    padding-top: 2em; }
+    #work .example .placeholder {
+      display: block;
+      position: relative;
+      z-index: 2;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 3vh; }
+      #work .example .placeholder img {
+        position: relative;
+        height: 100%;
+        width: 100%; }
+    #work .example .col-md-4 {
+      flex-shrink: 1;
+      transition: all .5s ease; }
+    #work .example .col-md-9 {
+      flex-grow: 1;
+      transition: all .5s ease; }
 
-.placeholder {
-  display: block;
-  height: 50%;
-  width: 75%;
-  position: relative;
-  z-index: 2;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 3vh; }
-  .placeholder img {
-    position: relative;
+.overlay {
+  position: fixed;
+  z-index: 100;
+  width: 90vw;
+  height: 90vh;
+  background-color: gainsboro;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-family: "Arial", Gadget, sans-serif; }
+  .overlay div .inner-content {
     height: 100%;
-    width: 100%; }
+    font-size: 1.25rem; }
+    .overlay div .inner-content div {
+      display: block;
+      position: relative;
+      z-index: 2;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 3vh; }
+      .overlay div .inner-content div img {
+        position: relative;
+        height: 100%;
+        width: 100%; }
+
+.tint-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 80;
+  display: none; }
 
 .group1 {
   display: block;
-  position: relative; }
+  position: relative;
+  font-size: .75em;
+  padding-top: 2vh; }
   .group1 img {
     position: relative;
     height: 100%; }
-
-.jumbotron {
-  box-shadow: 5px 10px #888888; }
 
 .notop {
   padding-top: 0; }
 
 #contact {
-  padding-top: 25%;
-  padding-bottom: 25%;
+  min-height: 75vh;
+  padding-top: 10%;
+  padding-bottom: 10%;
   font-family: "Arial Black", Gadget, sans-serif; }
   #contact button {
     background-color: #646464;
@@ -172,14 +219,14 @@ html {
     height: auto;
     margin-top: 10%; }
 
-  .placeholder, .example, .group1 {
-    height: auto; } }
-@media only screen and (min-width: 900px) {
-  .media-body {
-    height: 50%;
-    font-size: 1.5em; }
+  #work .example h3 {
+    font-size: 2vw; }
 
-  .logo-group {
-    margin-top: 0%; } }
+  #contact {
+    min-height: 100vh; } }
+@media only screen and (min-width: 900px) {
+  .overlay div .inner-content {
+    height: 100%;
+    font-size: 1.4rem; } }
 
 /*# sourceMappingURL=main.css.map */

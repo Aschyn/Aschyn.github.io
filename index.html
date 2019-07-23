@@ -17,6 +17,37 @@
 <script src="js/main.js"></script>
 </head>
 <body>
+  <div class="tint-overlay"></div>
+  <div class="overlay d-none jumbotron pb-5 pt-2 mx-auto example row" style="background: rgb(245, 245, 245)" id="mtg-overlay">
+    <h3 class="text-center col-1 offset-11" onclick="hideOverlay('mtg-overlay')">X</h3>
+    <h3 class="text-center col-12">Morris Theatre Guild</h3>
+    <div class="row">
+      <div class="inner-content">
+      <div class=" col-md-6"><a href="http://www.mtg.lat41.org"><img src="css/images/mtg.jpg" alt="Morris Theatre Guild Website"></a></div>
+      <div class="mx-auto col-md-12 container-fluid">
+        <div class="mt-2 mb-0 text-center"><p>Wordpress website built for a local theatre group in Morris, IL. I developed a theme for content to be
+          easily added or removed by their members without the need to in-depth technical knowledge. This project pushed me into the deep end,
+          forcing me to learn Wordpress on the fly.
+        </p></div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="overlay d-none jumbotron pb-5 pt-2 mx-auto example row" style="background: rgb(245, 245, 245)" id="screensaver-overlay">
+    <h3 class="text-center col-1 offset-11" onclick="hideOverlay('screensaver-overlay')">X</h3>
+    <h3 class="text-center col-12">Screensaver (beta)</h3>
+    <div class="row">
+      <div class="inner-content">
+      <div class=" col-md-6"><a href="https://github.com/Aschyn/ScreenSaver"><img src="css/images/screensaver.jpg" alt="Screensaver"></a></div>
+      <div class="mx-auto col-md-12 container-fluid">
+        <div class="mt-2 mb-0 text-center"><p>After building a DIY smart-fridge monitor, I wanted to challenge myself with a PHP project.
+          The goal of this was to display the time and weather, as well as the ability to show color-coded events from multiple calendars.
+          This is my first PHP project and my first time working with and traversing ICAL(.ics) files.
+        </p></div>
+      </div>
+      </div>
+    </div>
+  </div>
   <!--MENU-->
   <header>
     <div id="menu_open" onclick="openMenu()"><i class="fas fa-bars"></i></div>
@@ -35,58 +66,53 @@
         <li><a href="https://github.com/Aschyn"><i class="fab fa-github fa-2x"></i></a></li>
       </ul>
       <div class="d-block mx-auto" id="intro">
-        <h2><b>I'm Garrick</b></h2><h4><b>Quick-learning front end web developer. Making things work, so you don't have to.</b></h4>
+        <h1><b>My name is Garrick</b></h1><h3><b>I develop websites so you don't have to.</b></h3>
       </div>
   </div>
   <!--About-->
   <div class="page" id="about">
-    <img src="portrait.jpg" alt="photo of author" class="rounded-circle">
+    <img src="css/images/portrait.jpg" alt="photo of author" class="rounded-circle">
     <div class="container-fluid">
       <div  class="row" id="interests">
         <p class="col-xs-12" id="topHalf"><b>
-          I create responsive websites that work on a variety of devices
-          using the knowledge I've gained by my associates degree,
-          front-end certificate, and self teaching. I primarily utilize HTML5, Bootstrap, CSS, SASS, jquery
-          and JS.</b></p>
-          <p class="col-xs-12" id="botHalf"> <b>When I'm not working, I'm either gaming, fishing, or geeking out over some
-          form of technology.I look forward to expanding my horizons and learning new
-          languages and tools that will further refine my skills.
+          I create responsive websites using knowledge I've gained by my associates degree,
+          front-end certificate, and self teaching. I have experience in the general front-end languages as well as jquery, SASS, and Bootstrap.
+          My personal and professional experience also extends to PHP and Wordpress.</b></p>
+          <p class="col-xs-12" id="botHalf"> <b>Being a total geek, I am surrounded by technology most of the day, if I'm not fishing. I'm
+            excited to continue my journey and expand my knowledge of web development and everything involved.
         </b></p>
      </div>
   </div>
 </div>
   <!--Work-->
-  <div class="page container-fluid pb-2 pt-5" id="work">
-    <h3 class="text-center"><b>Personal Projects</b></h3>
-    <div class="jumbotron pb-5 mt-5 example" style="background: rgb(245, 245, 245)">
-      <h3 class="text-center">Html calculator</h3>
-      <div class="row">
-      <div class="media placeholder col-md-6"><a href="https://codepen.io/Aschyn/pen/goazVW"><img src="calculator.jpg" alt="Css Calculator"></a></div>
-      <div class="group1 d-block mx-auto col-md-6 container-fluid">
-      <div class="media-body mt-2 mb-0 text-center"><p>Responsive calculator entirely in the browser. </p></div>
-      <div class="logo-group row no-gutters">
-        <img src="bootstrap.png" alt="" class="lang-logo col-4 col-sm-4">
-        <img src="HTML5-logo.png" alt="" class="lang-logo no-gutters col-2 col-sm-2">
-        <img src="CSS-logo.png" alt="" class="lang-logo col-2 col-sm-0">
-        <img src="jquery.png" alt="" class="lang-logo col-4 col-sm-3 pt-2">
+  <div class="page container-fluid pb-2 pt-5 row justify-content-around mx-0" id="work">
+    <h2 class="text-center col-12 mb-5"><b>Some of My Work</b></h2>
+    <div class="jumbotron col-md-5 col-10 my-5 example row" style="background: rgb(245, 245, 245)" onclick="showOverlay('mtg-overlay')">
+      <h3 class="text-center col-md-12">Morris Theatre Guild</h3>
+      <div class="row col-md-12 justify-content-around mx-0">
+      <div class="media placeholder col-md-8"><img src="css/images/mtg.jpg" alt="Morris Theatre Guild Website"></div>
+      <div class="group1 mx-auto col-md-12 container-fluid">
+      <div class="logo-group row no-gutters justify-content-around">
+        <img src="css/images/bootstrap.png" alt="" class="lang-logo col-2">
+        <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
+        <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
+        <img src="css/images/jquery.png" alt="" class="lang-logo col-4 my-auto">
+        <img src="css/images/wp-logo.png" alt="" class="lang-logo col-2">
     </div>
     </div>
     </div>
     </div>
-    <div class="jumbotron pb-5 example" style="background: rgb(245, 245, 245)">
-      <h3 class="text-center">Portfolio Site</h3>
-      <div class="row">
-      <div class="media placeholder col-md-6"><a href="#landing"><img src="portfolio_img.jpg" alt="Screenshot of Portfolio"></a></div>
-      <div class="group1 d-block mx-auto col-md-6 container-fluid">
-      <div class="media-body mt-2 mb-0 text-center "><p>Website used to show of my experience and give prospective
-        employers a quick look into my capabilites. Using this site as my introduction into SASS.</p></div>
-      <div class="logo-group row no-gutters ">
-      <img src="bootstrap.png" alt="" class="lang-logo col-4 col-sm-4">
-      <img src="HTML5-logo.png" alt="" class="lang-logo no-gutters col-2 col-sm-2">
-      <img src="CSS-logo.png" alt="" class="lang-logo col-2 col-sm-0">
-      <img src="jquery.png" alt="" class="lang-logo col-4 col-sm-3 pt-2">
-      <img src="sass.png" alt="" class="col-2 lang-logo offset-5 col-sm-2 offset-sm-5 mt-2">
-    </div>
+    <div class="jumbotron col-md-5 col-10 example row my-5" style="background: rgb(245, 245, 245)" onclick="showOverlay('screensaver-overlay')">
+      <h3 class="text-center col-12">Screensaver (Beta)</h3>
+      <div class="row col-md-12 justify-content-around mx-0">
+      <div class="media placeholder col-md-8"><img src="css/images/screensaver.jpg" alt="Screensaver web page"></div>
+      <div class="group1 mx-auto col-md-12 container-fluid">
+        <div class="logo-group row no-gutters justify-content-around">
+          <img src="css/images/php-logo.png" alt="" class="lang-logo col-4">
+          <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
+          <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
+          <img src="css/images/jquery.png" alt="" class="lang-logo col-4 my-auto">
+        </div>
     </div>
     </div>
     </div>
@@ -95,7 +121,7 @@
   <div class="page text-center" id="contact">
     <h2><b>Get In Touch!</b></h2>
     <form id="contactform" action="https://formspree.io/garrickmgriffith@hotmail.com" method="POST">
-      <div class="form-group container">
+      <div class="form-group container mb-0">
         <input type="text" name="_replyto" class="form-control" placeholder="Your Email">
         <textarea class="form-control" name="message" placeholder="message" rows="10"></textarea>
         <input type="hidden" name="_subject" value="New submission!"/>

@@ -8,6 +8,9 @@
     padding-left: 0;
   }
 }
+.row > div{
+  transition: all .5s ease-in-out;
+}
 html{
   background-color:teal;
   min-height: 100%;
@@ -78,6 +81,11 @@ html{
   display:block;
   min-height: 100vh;
   color:rgb(220,220,220);
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
   a{
     color:rgb(220,220,220) !important;
   }
@@ -146,44 +154,95 @@ html{
  }
 }
 #work{
-  min-height:100vh;
+  min-height:auto;
   position: relative;
   padding-top:5vh;
   font-family: "Arial Black", Gadget, sans-serif;
-}
-.placeholder{
-  display:block;
-  height: 50%;
-  width:75%;
-  position: relative;
-  z-index: 2;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 3vh;
-  img{
-    position: relative;
-    height:100%;
-    width:100%;
+  .jumbotron{
+    box-shadow: 5px 10px #888888;
+  }
+  .example{
+    transition: all .5s ease-in-out;
+    padding-top: 2em;
+    .placeholder{
+      display:block;
+      position: relative;
+      z-index: 2;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 3vh;
+      img{
+        position: relative;
+        height:100%;
+        width:100%;
+      }
+    }
+    .col-md-4{
+      flex-shrink: 1;
+      transition: all .5s ease;
+    }
+    .col-md-9{
+      flex-grow: 1;
+      transition: all .5s ease;
+    }
   }
 }
+.overlay{
+  position: fixed;
+  z-index: 100;
+  width: 90vw;
+  height: 90vh;
+  background-color: rgb(220, 220,220);
+  left: 0;right: 0;top: 0;bottom: 0;
+  margin: auto;
+  font-family: "Arial", Gadget, sans-serif;
+  div{
+    .inner-content{
+      height:100%;
+      font-size: 1.25rem;
+      div{
+        display:block;
+        position: relative;
+        z-index: 2;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3vh;
+        img{
+          position: relative;
+          height:100%;
+          width:100%;
+        }
+      }
+    }
+  }
+}
+.tint-overlay{
+  position:fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 80;
+  display: none;
+}
+
 
 .group1{
   display:block;
   position: relative;
+  font-size: .75em;
+  padding-top: 2vh;
     img{
       position: relative;
-      height: 100%;
+      height:100%;
     }
   }
-.jumbotron{
-  box-shadow: 5px 10px #888888;
-}
 .notop{
   padding-top:0;
 }
 #contact{
-  padding-top:25%;
-  padding-bottom:25%;
+  min-height: 75vh;
+  padding-top:10%;
+  padding-bottom:10%;
   font-family: "Arial Black", Gadget, sans-serif;
   button{
     background-color: rgb(100, 100, 100);
@@ -196,21 +255,33 @@ html{
 }
 @media only screen and (min-width: 768px) {
 
-  .logo-group,{
+  .logo-group{
     height:auto;
     margin-top: 10%;
   }
-  .placeholder, .example, .group1{
-    height:auto;
+
+  #work{
+    .example{
+      h3{
+        font-size: 2vw;
+      }
+    }
   }
+  #contact{
+    min-height: 100vh;
+  }
+
 }
-//@media only screen and (min-width:1000px){.media-body{font-size:2em;}}
+@media screen and (min-width: 751px) and (max-width: 882px){
+}
 @media only screen and (min-width: 900px){
-  .media-body{
-    height: 50%;
-    font-size: 1.5em;
+  #work{
+    .example{
+
+    }
   }
-  .logo-group{
-    margin-top:0%;
+  .overlay div .inner-content{
+    height: 100%;
+    font-size: 1.4rem;
   }
 }
