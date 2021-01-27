@@ -88,7 +88,15 @@ html {
       color: gainsboro; }
     #landing ul a:hover {
       color: #969696 !important; }
-
+    #landing .resume-btn{
+      background-color: #303030;
+      padding: 10px;
+      width: fit-content;
+      margin: auto;
+      margin-top: 10vh;
+      border: 1px solid white;
+      border-radius: 5px;
+      }
 #intro {
   padding-left: 3em;
   padding-right: 2em;
