@@ -1,19 +1,23 @@
 .no-gutters {
   margin-right: 0;
-  margin-left: 0; }
-  .no-gutters > .col,
-  .no-gutters > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0; }
+  margin-left: 0;
+}
+.no-gutters > .col,
+.no-gutters > [class*=col-] {
+  padding-right: 0;
+  padding-left: 0;
+}
 
 .row > div {
-  transition: all .5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+}
 
 html {
-  background-color: #969696;
+  background-color: teal;
   min-height: 100%;
   display: block;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 #menu_open {
   font-size: 2em;
@@ -22,10 +26,12 @@ html {
   color: gainsboro;
   top: -5px;
   left: 5px;
-  z-index: 10; }
-  #menu_open:hover {
-    cursor: pointer;
-    color: #969696; }
+  z-index: 10;
+}
+#menu_open:hover {
+  cursor: pointer;
+  color: #969696;
+}
 
 #menu {
   z-index: 10;
@@ -34,39 +40,45 @@ html {
   background-color: #b4b4b4;
   position: fixed;
   transition: width 1s;
-  display: block; }
-  #menu #close {
-    position: absolute;
-    font-size: 2em;
-    right: 5vw;
-    top: 0; }
-    #menu #close:hover {
-      cursor: pointer; }
-  #menu .item {
-    overflow: hidden;
-    display: block;
-    height: 20vh;
-    font-size: 5em;
-    color: #282828;
-    text-align: center;
-    line-height: 20vh;
-    background-color: #969696;
-    box-shadow: 0px 5px 12px #323232;
-    opacity: 0;
-    transition: opacity 2s, width 1s; }
-    #menu .item:hover {
-      background-color: #f0f0f0; }
-  #menu a:hover {
-    text-decoration: none; }
-  #menu #choiceAbout {
-    margin-bottom: 5vh;
-    margin-top: 14vh; }
-  #menu #choiceWork {
-    margin-bottom: 5vh; }
-
+  display: block;
+}
+#menu #close {
+  position: absolute;
+  font-size: 2em;
+  right: 5vw;
+  top: 0;
+}
+#menu #close:hover {
+  cursor: pointer;
+}
+#menu .item {
+  overflow: hidden;
+  display: block;
+  height: 20vh;
+  font-size: 5em;
+  color: #282828;
+  text-align: center;
+  line-height: 20vh;
+  background-color: #969696;
+  box-shadow: 0px 5px 12px #323232;
+  opacity: 0;
+  transition: opacity 2s, width 1s;
+}
+#menu .item:hover {
+  background-color: #f0f0f0;
+}
+#menu a:hover {
+  text-decoration: none;
+}
+#menu #choiceAbout {
+  margin-bottom: 5vh;
+  margin-top: 14vh;
+}
+#menu #choiceWork {
+  margin-bottom: 5vh;
+}
 #landing {
   z-index: 1;
-  background-color: #969696;
   background-image: url("laptopBW.jpg");
   background-size: cover;
   background-position: center;
@@ -74,95 +86,117 @@ html {
   display: block;
   min-height: 100vh;
   color: gainsboro;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
-  #landing a {
-    color: gainsboro !important; }
-  #landing ul {
-    position: absolute;
-    top: 15px;
-    right: 10px; }
-    #landing ul li {
-      display: inline-block;
-      color: gainsboro; }
-    #landing ul a:link {
-      color: gainsboro; }
-    #landing ul a:hover {
-      color: #969696 !important; }
-    #landing .resume-btn{
-      background-color: #303030;
-      padding: 10px;
-      width: fit-content;
-      margin: auto;
-      margin-top: 10vh;
-      border: 1px solid white;
-      border-radius: 5px;
-      }
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+#landing a {
+  color: gainsboro !important;
+}
+#landing ul {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+#landing ul li {
+  display: inline-block;
+  color: gainsboro;
+}
+#landing ul a:link {
+  color: gainsboro;
+}
+#landing ul a:hover {
+  color: #969696 !important;
+}
+#landing .resume-btn {
+  background-color: #303030;
+  padding: 10px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 10vh;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
 #intro {
   padding-left: 3em;
   padding-right: 2em;
   padding-top: 30vh;
   height: 100vh;
   z-index: 1;
-  text-align: center; }
+  text-align: center;
+}
 
 .page {
   background-color: #969696;
-  min-height: 100vh; }
+  min-height: 100vh;
+}
 
 #about {
   padding-top: 4em;
   font-size: 1.2em;
-  z-index: 1; }
-  #about img {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: .5em;
-    display: block; }
-  #about #interests {
-    padding-left: 0;
-    margin-right: auto;
-    margin-left: auto; }
-    #about #interests p {
-      font-size: 1.5em;
-      padding-left: 1em;
-      margin-left: 0;
-      margin-bottom: 0; }
-    #about #interests #topHalf {
-      border-top: solid #808080 2px;
-      border-right: solid #808080 2px;
-      z-index: 0; }
-    #about #interests #botHalf {
-      border-bottom: solid #404040 2px;
-      border-left: solid #404040 2px;
-      z-index: 0; }
+  z-index: 1;
+}
+#about img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0.5em;
+  display: block;
+}
+#about #interests {
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+#about #interests p {
+  font-size: 1.5em;
+  padding-left: 1em;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+#about #interests #topHalf {
+  border-top: solid #808080 2px;
+  border-right: solid #808080 2px;
+  z-index: 0;
+}
+#about #interests #botHalf {
+  border-bottom: solid #404040 2px;
+  border-left: solid #404040 2px;
+  z-index: 0;
+}
 
 #work {
   min-height: auto;
   position: relative;
   padding-top: 5vh;
-  font-family: "Arial Black", Gadget, sans-serif; }
-  #work .jumbotron {
-    box-shadow: 5px 10px #888888; }
-  #work .example {
-    transition: all .5s ease-in-out;
-    padding-top: 2em; }
-    #work .example .placeholder {
-      display: block;
-      position: relative;
-      z-index: 2;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 3vh; }
-      #work .example .placeholder img {
-        position: relative;
-        height: 100%;
-        width: 100%; }
-    #work .example .col-md-4 {
-      flex-shrink: 1;
-      transition: all .5s ease; }
-    #work .example .col-md-9 {
-      flex-grow: 1;
-      transition: all .5s ease; }
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+#work .jumbotron {
+  box-shadow: 5px 10px #888888;
+}
+#work .example {
+  transition: all 0.5s ease-in-out;
+  padding-top: 2em;
+}
+#work .example .placeholder {
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3vh;
+}
+#work .example .placeholder img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#work .example .col-md-4 {
+  flex-shrink: 1;
+  transition: all 0.5s ease;
+}
+#work .example .col-md-9 {
+  flex-grow: 1;
+  transition: all 0.5s ease;
+}
 
 .overlay {
   position: fixed;
@@ -175,21 +209,25 @@ html {
   top: 0;
   bottom: 0;
   margin: auto;
-  font-family: "Arial", Gadget, sans-serif; }
-  .overlay div .inner-content {
-    height: 100%;
-    font-size: 1.25rem; }
-    .overlay div .inner-content div {
-      display: block;
-      position: relative;
-      z-index: 2;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 3vh; }
-      .overlay div .inner-content div img {
-        position: relative;
-        height: 100%;
-        width: 100%; }
+  font-family: "Arial", Gadget, sans-serif;
+}
+.overlay div .inner-content {
+  height: 100%;
+  font-size: 1.25rem;
+}
+.overlay div .inner-content div {
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3vh;
+}
+.overlay div .inner-content div img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 
 .tint-overlay {
   position: fixed;
@@ -197,45 +235,58 @@ html {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 80;
-  display: none; }
+  display: none;
+}
 
 .group1 {
   display: block;
   position: relative;
-  font-size: .75em;
-  padding-top: 2vh; }
-  .group1 img {
-    position: relative;
-    height: 100%; }
+  font-size: 0.75em;
+  padding-top: 2vh;
+}
+.group1 img {
+  position: relative;
+  height: 100%;
+}
 
 .notop {
-  padding-top: 0; }
+  padding-top: 0;
+}
 
 #contact {
   min-height: 75vh;
   padding-top: 10%;
   padding-bottom: 10%;
-  font-family: "Arial Black", Gadget, sans-serif; }
-  #contact button {
-    background-color: #646464;
-    border-color: #e6e6e6; }
-    #contact button:hover {
-      background-color: #969696;
-      border-color: #e6e6e6; }
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+#contact button {
+  background-color: #646464;
+  border-color: #e6e6e6;
+}
+#contact button:hover {
+  background-color: #969696;
+  border-color: #e6e6e6;
+}
 
 @media only screen and (min-width: 768px) {
   .logo-group {
     height: auto;
-    margin-top: 10%; }
+    margin-top: 10%;
+  }
 
   #work .example h3 {
-    font-size: 2vw; }
+    font-size: 2vw;
+  }
 
   #contact {
-    min-height: 100vh; } }
+    min-height: 100vh;
+  }
+}
 @media only screen and (min-width: 900px) {
   .overlay div .inner-content {
     height: 100%;
-    font-size: 1.4rem; } }
+    font-size: 1.4rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
