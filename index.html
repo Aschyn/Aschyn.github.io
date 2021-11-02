@@ -8,7 +8,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!--[if lt IE 9]>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 </script>
 <![endif]-->
@@ -18,47 +19,64 @@
 </head>
 <body>
   <div class="tint-overlay"></div>
-  <div class="overlay d-none jumbotron pb-5 pt-2 mx-auto example row" style="background: rgb(245, 245, 245)" id="stargazer-overlay">
-    <h3 class="text-center col-1 offset-11 close-ovelay" onclick="hideOverlay('stargazer-overlay')">X</h3>
-    <h3 class="text-center col-12">Stargazer Studios Photography</h3>
-    <div class="row">
+
+  <div class="overlay d-none jumbotron py-0 mx-auto example row" style="background: rgb(245, 245, 245)" id="campaign-builder-overlay">
+    <h3 class="text-center col-1 offset-11 close-ovelay" onclick="hideOverlay('campaign-builder-overlay')">X</h3>
+    <div class="row overlay-card">
+      <h3 class="text-center col-12">Campaign Builder</h3>
       <div class="inner-content">
-      <div class=" col-md-6"><a href="http://www.stargazerstudiosphotography.com"><img src="css/images/stargazer.jpg" alt="Stargazer Studios Photography Website"></a></div>
-      <div class="mx-auto col-md-12 container-fluid">
-        <div class="mt-2 mb-0 text-center"><p>A photographer needed a website to show potential clients some of their previous work. This site is built
-          on Wordpress and customized to easily update the gallery using advance custom fields. I had to make it as user friendly as possible and create unique options
-          for the photographer to understand how to update the site without much guidance.
-        </p></div>
+      <div class=" col-md-6"><a href="https://campaign.sportexsafety.com/breastcancer"><img src="css/images/campaignbuilder.jpg" alt="Campaign Builder Website"></a></div>
+      <div class="mx-auto col-md-6 container-fluid text-left align-content-center">
+        <div class="mt-md-0 mt-2 mb-0 text-left">
+          <h4><u>Tech In Use:</u></h4>
+          <div class="logo-group row no-gutters justify-content-around text-center">
+            <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
+            <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
+            <img src="css/images/React-logo.png" alt="" class="lang-logo col-2">
+            <img src="css/images/Node-logo.png" alt="" class="lang-logo col-2">
+          </div>
+        </div>
       </div>
       </div>
     </div>
   </div>
-  <div class="overlay d-none jumbotron pb-5 pt-2 mx-auto example row" style="background: rgb(245, 245, 245)" id="mtg-overlay">
-    <h3 class="text-center col-1 offset-11 close-ovelay" onclick="hideOverlay('mtg-overlay')">X</h3>
-    <h3 class="text-center col-12">Morris Theatre Guild</h3>
-    <div class="row">
+  <div class="overlay d-none jumbotron pb-5 pt-2 mx-auto example row" style="background: rgb(245, 245, 245)" id="sportex-overlay">
+    <h3 class="text-center col-1 offset-11 close-ovelay" onclick="hideOverlay('sportex-overlay')">X</h3>
+    <div class="row overlay-card">
+      <h3 class="text-center col-12">Sportex Safety</h3>
       <div class="inner-content">
-      <div class=" col-md-6"><a href="http://www.mtg.lat41.org"><img src="css/images/mtg.jpg" alt="Morris Theatre Guild Website"></a></div>
-      <div class="mx-auto col-md-12 container-fluid">
-        <div class="mt-2 mb-0 text-center"><p>Wordpress website built for a local theatre group in Morris, IL. I developed a theme for content to be
-          easily added or removed by their members without the need to in-depth technical knowledge. This project pushed me into the deep end,
-          forcing me to learn Wordpress on the fly.
-        </p></div>
+      <div class=" col-md-6"><a href="https://www.sportexsafety.com"><img src="css/images/sportex.jpg" alt="Sportex Safety Website"></a></div>
+      <div class="mx-auto col-md-6 container-fluid">
+        <div class="mt-md-0 mt-2 mb-0 text-left">
+          <h4><u>Tech In Use:</u></h4>
+          <div class="logo-group row no-gutters justify-content-around text-center">
+            <img src="css/images/Magento-logo.png" alt="" class="lang-logo col-2">
+            <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
+            <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
+            <img src="css/images/php-logo.png" alt="" class="lang-logo col-2">
+          </div>
+        </div>
       </div>
       </div>
     </div>
   </div>
   <div class="overlay d-none jumbotron pb-5 pt-2 mx-auto example row" style="background: rgb(245, 245, 245)" id="screensaver-overlay">
     <h3 class="text-center col-1 offset-11 close-ovelay" onclick="hideOverlay('screensaver-overlay')">X</h3>
-    <h3 class="text-center col-12">Screensaver With Calendar</h3>
-    <div class="row">
+    <div class="row overlay-card">
+      <h3 class="text-center col-12">Tablet Screensaver</h3>
       <div class="inner-content">
       <div class=" col-md-6"><a href="https://github.com/Aschyn/ScreenSaver"><img src="css/images/screenSaver.jpg" alt="Screensaver"></a></div>
-      <div class="mx-auto col-md-12 container-fluid">
-        <div class="mt-2 mb-0 text-center"><p>After building a DIY smart-fridge monitor, I wanted to challenge myself with a PHP project.
-          The goal of this was to display the time and weather, as well as the ability to show color-coded events from multiple calendars.
-          This is my first PHP project and my first time working with and traversing ICAL(.ics) files.
-        </p></div>
+      <div class="mx-auto col-md-3 container-fluid">
+        <div class="mt-md-0 mt-2 mb-0 text-left">
+          <h4><u>Tech In Use:</u></h4>
+          <div class="logo-group row no-gutters justify-content-around text-center">
+            <img src="css/images/bootstrap.png" alt="" class="lang-logo col-2">
+            <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
+            <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
+            <img src="css/images/jquery.png" alt="" class="lang-logo col-4 my-auto">
+            <img src="css/images/wp-logo.png" alt="" class="lang-logo col-2">
+          </div>
+        </div>
       </div>
       </div>
     </div>
@@ -101,51 +119,49 @@
   </div>
 </div>
   <!--Work-->
-  <div class="page container-fluid pb-2 pt-5 row justify-content-around mx-0" id="work">
-    <h2 class="text-center col-12 mb-5"><b>Some of My Work</b></h2>
-    <div class="jumbotron col-md-5 col-10 my-5 example row" style="background: rgb(245, 245, 245)" onclick="showOverlay('stargazer-overlay')">
-      <h3 class="text-center col-md-12">Stargazer Studios Photography</h3>
-      <div class="row col-md-12 justify-content-around mx-0">
-      <div class="media placeholder col-md-8"><img src="css/images/stargazer.jpg" alt="Stargazer Studios Photography website"></div>
+  <div class="page container-fluid pb-5 pt-5 row justify-content-around mx-0" id="work">
+    <h2 class="text-center text-md-left col-12 mb-5"><b>Some of My Work</b></h2>
+
+    <div class=" col-md-3 col-12 my-3 col-my-5-md example row jumbotron" style="background: rgb(245, 245, 245)" onclick="showOverlay('campaign-builder-overlay')">
+        <div class="media placeholder col-md-12 "><img src="css/images/campaignbuilder.jpg" alt="Campaign Builder Website"></div>
+        <div class="group1 mx-auto col-md-12 container-fluid">
+          <h5 class="text-center col-md-12 card_title">Campaign Builder</h5>
+          <!--<div class="logo-group row no-gutters justify-content-around">
+            <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
+            <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
+            <img src="css/images/jquery.png" alt="" class="lang-logo col-4 my-auto">
+            <img src="css/images/wp-logo.png" alt="" class="lang-logo col-2">
+          </div>-->
+        </div>
+    </div>
+
+    <div class="jumbotron col-md-3 col-12 my-3 col-my-5-md example row" style="background: rgb(245, 245, 245)" onclick="showOverlay('sportex-overlay')">
+      <div class="media placeholder col-md-12"><img src="css/images/sportex.jpg" alt="Sportex Safety Website"></div>
       <div class="group1 mx-auto col-md-12 container-fluid">
-      <div class="logo-group row no-gutters justify-content-around">
-        <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
-        <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
-        <img src="css/images/jquery.png" alt="" class="lang-logo col-4 my-auto">
-        <img src="css/images/wp-logo.png" alt="" class="lang-logo col-2">
+        <h5 class="text-center col-md-12">Sportex Safety</h5>
+        <!--<div class="logo-group row no-gutters justify-content-around">
+          <img src="css/images/bootstrap.png" alt="" class="lang-logo col-2">
+          <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
+          <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
+          <img src="css/images/jquery.png" alt="" class="lang-logo col-4 my-auto">
+          <img src="css/images/wp-logo.png" alt="" class="lang-logo col-2">
+        </div>-->
+      </div>
     </div>
-    </div>
-    </div>
-    </div>
-    <div class="jumbotron col-md-5 col-10 my-5 example row" style="background: rgb(245, 245, 245)" onclick="showOverlay('mtg-overlay')">
-      <h3 class="text-center col-md-12">Morris Theatre Guild</h3>
-      <div class="row col-md-12 justify-content-around mx-0">
-      <div class="media placeholder col-md-8"><img src="css/images/mtg.jpg" alt="Morris Theatre Guild Website"></div>
+
+    <div class="jumbotron col-md-3 col-12 my-3 col-my-5-md example row" style="background: rgb(245, 245, 245)" onclick="showOverlay('screensaver-overlay')">
+      <div class="media placeholder col-md-12"><img src="css/images/screenSaver.jpg" alt="Screensaver web page"></div>
       <div class="group1 mx-auto col-md-12 container-fluid">
-      <div class="logo-group row no-gutters justify-content-around">
-        <img src="css/images/bootstrap.png" alt="" class="lang-logo col-2">
-        <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
-        <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
-        <img src="css/images/jquery.png" alt="" class="lang-logo col-4 my-auto">
-        <img src="css/images/wp-logo.png" alt="" class="lang-logo col-2">
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="jumbotron col-md-5 col-10 example row my-5" style="background: rgb(245, 245, 245)" onclick="showOverlay('screensaver-overlay')">
-      <h3 class="text-center col-12">Screensaver</h3>
-      <div class="row col-md-12 justify-content-around mx-0">
-      <div class="media placeholder col-md-8"><img src="css/images/screenSaver.jpg" alt="Screensaver web page"></div>
-      <div class="group1 mx-auto col-md-12 container-fluid">
-        <div class="logo-group row no-gutters justify-content-around">
+        <h5 class="text-center col-12">Screensaver</h5>
+        <!--<div class="logo-group row no-gutters justify-content-around">
           <img src="css/images/php-logo.png" alt="" class="lang-logo col-4">
           <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
           <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
           <img src="css/images/jquery.png" alt="" class="lang-logo col-4 my-auto">
-        </div>
+        </div>-->
+      </div>
     </div>
-    </div>
-    </div>
+  
   </div>
   <!--Contact-->
   <div class="page text-center" id="contact">

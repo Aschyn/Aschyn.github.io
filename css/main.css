@@ -77,6 +77,7 @@ html {
 #menu #choiceWork {
   margin-bottom: 5vh;
 }
+
 #landing {
   z-index: 1;
   background-image: url("laptopBW.jpg");
@@ -84,7 +85,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   display: block;
-  min-height: 100vh;
+  min-height: 93vh;
   color: gainsboro;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
@@ -120,7 +121,8 @@ html {
   padding-left: 3em;
   padding-right: 2em;
   padding-top: 30vh;
-  height: 100vh;
+  height: 75vh;
+  width: 75vw;
   z-index: 1;
   text-align: center;
 }
@@ -134,6 +136,8 @@ html {
   padding-top: 4em;
   font-size: 1.2em;
   z-index: 1;
+  background: #656565;
+  background: linear-gradient(180deg, #656565 0%, #969696 41%, #dddddd 85%);
 }
 #about img {
   margin-right: auto;
@@ -168,13 +172,22 @@ html {
   position: relative;
   padding-top: 5vh;
   font-family: "Arial Black", Gadget, sans-serif;
+  background-color: #DDD;
+}
+#work h2 {
+  font-size: 28px;
 }
 #work .jumbotron {
-  box-shadow: 5px 10px #888888;
+  box-shadow: 3px 5px #888888;
+}
+#work .jumbotron:hover {
+  box-shadow: 5px 8px #888888;
 }
 #work .example {
   transition: all 0.5s ease-in-out;
-  padding-top: 2em;
+  padding: 0;
+  padding-bottom: 1.5vh;
+  width: 95vw;
 }
 #work .example .placeholder {
   display: block;
@@ -182,7 +195,7 @@ html {
   z-index: 2;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 3vh;
+  margin-top: 1.5vh;
 }
 #work .example .placeholder img {
   position: relative;
@@ -211,9 +224,19 @@ html {
   margin: auto;
   font-family: "Arial", Gadget, sans-serif;
 }
+.overlay h3 {
+  height: min-content;
+}
+.overlay .overlay-card {
+  height: 70%;
+}
+@media screen and (min-width: 900px) {
+  .overlay .overlay-card {
+    height: 100%;
+  }
+}
 .overlay div .inner-content {
   height: 100%;
-  font-size: 1.25rem;
 }
 .overlay div .inner-content div {
   display: block;

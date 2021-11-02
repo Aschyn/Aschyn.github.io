@@ -70,7 +70,6 @@ html{
         }
   #choiceAbout{margin-bottom: 5vh;margin-top: 14vh;}
   #choiceWork{margin-bottom: 5vh;}
-  #choiceContact{}
 }
 #landing{
   z-index:1;
@@ -79,7 +78,7 @@ html{
   background-position: center;
   background-repeat: no-repeat;
   display:block;
-  min-height: 100vh;
+  min-height: 93vh;
   color:rgb(220,220,220);
   text-shadow:
   -1px -1px 0 #000,
@@ -119,7 +118,8 @@ html{
   padding-left: 3em;
   padding-right: 2em;
   padding-top:30vh;
-  height: 100vh;
+  height: 75vh;
+  width: 75vw;
   z-index: 1;
   text-align: center;
 }
@@ -132,6 +132,8 @@ html{
   padding-top:4em;
   font-size: 1.2em;
   z-index: 1;
+  background: rgb(101,101,101);
+  background: linear-gradient(180deg, rgba(101,101,101,1) 0%, rgba(150,150,150,1) 41%, rgba(221,221,221,1) 85%);
  img{
    margin-right:auto;
    margin-left: auto;
@@ -167,19 +169,28 @@ html{
   position: relative;
   padding-top:5vh;
   font-family: "Arial Black", Gadget, sans-serif;
+  background-color: #DDD;
+  h2{
+    font-size: 28px;;
+  }
   .jumbotron{
-    box-shadow: 5px 10px #888888;
+    box-shadow: 3px 5px #888888;
+    &:hover{
+      box-shadow: 5px 8px #888888;
+    }
   }
   .example{
     transition: all .5s ease-in-out;
-    padding-top: 2em;
+    padding: 0;
+    padding-bottom: 1.5vh;
+    width:95vw;
     .placeholder{
       display:block;
       position: relative;
       z-index: 2;
       margin-right: auto;
       margin-left: auto;
-      margin-top: 3vh;
+      margin-top: 1.5vh;
       img{
         position: relative;
         height:100%;
@@ -205,10 +216,18 @@ html{
   left: 0;right: 0;top: 0;bottom: 0;
   margin: auto;
   font-family: "Arial", Gadget, sans-serif;
+  h3{
+    height: min-content;
+  }
+  .overlay-card{
+    height: 70%;
+    @media screen and (min-width: 900px) {
+      height: 100%;
+    }
+  }
   div{
     .inner-content{
       height:100%;
-      font-size: 1.25rem;
       div{
         display:block;
         position: relative;
@@ -284,11 +303,6 @@ html{
 @media screen and (min-width: 751px) and (max-width: 882px){
 }
 @media only screen and (min-width: 900px){
-  #work{
-    .example{
-
-    }
-  }
   .overlay div .inner-content{
     height: 100%;
     font-size: 1.4rem;
