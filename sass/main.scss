@@ -12,7 +12,7 @@
   transition: all .5s ease-in-out;
 }
 html{
-  background-color:teal;
+  background-color: rgb(240, 240, 240);
   min-height: 100%;
   display: block;
   overflow-x: hidden;
@@ -34,12 +34,17 @@ html{
 #menu{
   z-index: 10;
   width: 0vw;
-  height: 100vh;
+  height: 5vh;
   background-color: rgb(180, 180, 180);
   position: fixed;
   transition: width 1s;
   display: block;
-
+  .menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
   #close{
     position:absolute;
     font-size: 2em;
@@ -73,13 +78,12 @@ html{
 }
 #landing{
   z-index:1;
-  background-image: url("laptopBW.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("./images/engineer.svg");
+  background-size: 25vw;
+  background-position: bottom;
   background-repeat: no-repeat;
   display:block;
   min-height: 93vh;
-  color:rgb(220,220,220);
   text-shadow:
   -1px -1px 0 #000,
   1px -1px 0 #000,
@@ -124,16 +128,16 @@ html{
   text-align: center;
 }
 .page{
-  background-color: rgb(150, 150, 150);
   min-height:100vh;
-
 }
 #about{
   padding-top:4em;
   font-size: 1.2em;
   z-index: 1;
-  background: rgb(101,101,101);
-  background: linear-gradient(180deg, rgba(101,101,101,1) 0%, rgba(150,150,150,1) 41%, rgba(221,221,221,1) 85%);
+  margin-top: 0px;
+  background: linear-gradient(180deg, orange 33%, rgba(0, 0, 0, 0) 33%);
+  //background: rgb(101,101,101);
+  //background: linear-gradient(180deg, rgba(101,101,101,1) 0%, rgba(150,150,150,1) 41%, rgba(221,221,221,1) 85%);
  img{
    margin-right:auto;
    margin-left: auto;
@@ -169,7 +173,6 @@ html{
   position: relative;
   padding-top:5vh;
   font-family: "Arial Black", Gadget, sans-serif;
-  background-color: #DDD;
   h2{
     font-size: 28px;;
   }
@@ -182,8 +185,35 @@ html{
   .example{
     transition: all .5s ease-in-out;
     padding: 0;
-    padding-bottom: 1.5vh;
-    width:95vw;
+    height: 40vh;
+    overflow: hidden;
+    .project-text{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: all .5s ease-in-out;
+      p{
+        width: 65%;
+      }
+    }
+    .project-background{
+      height: 100%;
+      width: 100%;
+      &:hover{
+        transform: scale(1.2);
+      }
+      button{
+        border-radius: 10px;
+        transition: all .5s ease;
+        &:hover{
+          background-color: paleturquoise;
+        }
+      }
+    }
     .placeholder{
       display:block;
       position: relative;
@@ -204,6 +234,34 @@ html{
     .col-md-9{
       flex-grow: 1;
       transition: all .5s ease;
+    }
+  }
+}
+#project-campaign-builder{
+  .project-background{
+    background-image: url('./images/campaignbuilder.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &:hover{
+    .project-text{
+      background-color: rgba(80, 80, 80, .8);
+      opacity:  1;
+    }
+  }
+}
+#project-sportex-safety{
+  .project-background{
+    background-image: url('./images/sportex.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &:hover{
+    .project-text{
+      background-color: rgba(80, 80, 80, .8);
+      opacity: 1;
     }
   }
 }

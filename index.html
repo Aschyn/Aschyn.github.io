@@ -60,7 +60,7 @@
       </div>
     </div>
   </div>
-  <div class="overlay d-none jumbotron pb-5 pt-2 mx-auto example row" style="background: rgb(245, 245, 245)" id="screensaver-overlay">
+  <!--<div class="overlay d-none jumbotron pb-5 pt-2 mx-auto example row" style="background: rgb(245, 245, 245)" id="screensaver-overlay">
     <h3 class="text-center col-1 offset-11 close-ovelay" onclick="hideOverlay('screensaver-overlay')">X</h3>
     <div class="row overlay-card">
       <h3 class="text-center col-12">Tablet Screensaver</h3>
@@ -80,19 +80,22 @@
       </div>
       </div>
     </div>
-  </div>
+  </div>-->
   <!--MENU-->
-  <header>
+
+  <!--<header>
     <div id="menu_open" onclick="openMenu()"><i class="fas fa-bars"></i></div>
     <div id="menu">
-      <div id="close" onclick="closeMenu()"><i class="fas fa-window-close"></i></div>
-      <a href="#about" ><div class="item" id="choiceAbout" onclick="closeMenu()">About</div></a>
-      <a href="#work"><div class="item" id="choiceWork" onclick="closeMenu()">Work</div></a>
-      <a href="#contact"><div class="item" id="choiceContact" onclick="closeMenu()">Contact</div></a>
+      <div class="menu-container">
+        <div id="close" onclick="closeMenu()"><i class="fas fa-window-close"></i></div>
+        <a href="#about" ><div class="item" onclick="closeMenu()">About</div></a>
+        <a href="#work"><div class="item" onclick="closeMenu()">Work</div></a>
+        <a href="#contact"><div class="item" onclick="closeMenu()">Contact</div></a>
+      </div>
     </div>
-  </header>
+  </header>-->
   <!--Landing Page-->
-  <div id="landing">
+  <div id="landing" class="page">
       <ul class=" mx-auto">
         <li><a href="https://www.linkedin.com/in/garrick-griffith/"><i class="fab fa-linkedin fa-2x "></i></a></li>
         <li><a href="https://codepen.io/Aschyn/"><i class="fab fa-codepen fa-2x ml-2 mr-2"></i></a></li>
@@ -105,7 +108,7 @@
   </div>
   <!--About-->
   <div class="page" id="about">
-    <img src="css/images/portrait.jpg" alt="photo of author" class="rounded-circle">
+    <!--<img src="css/images/portrait.jpg" alt="photo of author" class="rounded-circle">-->
     <div class="container-fluid">
       <div  class="row" id="interests">
         <p class="col-xs-12" id="topHalf"><b>
@@ -122,45 +125,57 @@
   <div class="page container-fluid pb-5 pt-5 row justify-content-around mx-0" id="work">
     <h2 class="text-center text-md-left col-12 mb-5"><b>Some of My Work</b></h2>
 
-    <div class=" col-md-3 col-12 my-3 col-my-5-md example row jumbotron" style="background: rgb(245, 245, 245)" onclick="showOverlay('campaign-builder-overlay')">
-        <div class="media placeholder col-md-12 "><img src="css/images/campaignbuilder.jpg" alt="Campaign Builder Website"></div>
+    <div class=" col-md-3 col-12 my-3 col-my-5-md example row jumbotron" id="project-campaign-builder" onclick="//showOverlay('campaign-builder-overlay')">
+        <!--<div class="media placeholder col-md-12 "><img src="css/images/campaignbuilder.jpg" alt="Campaign Builder Website"></div>
         <div class="group1 mx-auto col-md-12 container-fluid">
-          <h5 class="text-center col-md-12 card_title">Campaign Builder</h5>
-          <!--<div class="logo-group row no-gutters justify-content-around">
+        <h5 class="text-center col-md-12 card_title">Campaign Builder</h5>
+          <div class="logo-group row no-gutters justify-content-around">
             <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
             <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
             <img src="css/images/jquery.png" alt="" class="lang-logo col-4 my-auto">
             <img src="css/images/wp-logo.png" alt="" class="lang-logo col-2">
-          </div>-->
+          </div>
+        </div>-->
+        <div class="project-background">
+          <div class="project-text">
+            <h5>Campaign Builder</h5>
+            <p>React app built for corporate and bulk ordering of campaign items.</p>
+            <button onclick="window.open('https://campaign.sportexsafety.com/breastcancer')">Visit Website ></button>
+          </div>
         </div>
     </div>
 
-    <div class="jumbotron col-md-3 col-12 my-3 col-my-5-md example row" style="background: rgb(245, 245, 245)" onclick="showOverlay('sportex-overlay')">
-      <div class="media placeholder col-md-12"><img src="css/images/sportex.jpg" alt="Sportex Safety Website"></div>
+    <div class="jumbotron col-md-3 col-12 my-3 col-my-5-md example row" id="project-sportex-safety" onclick="//showOverlay('sportex-overlay')">
+      <!--<div class="media placeholder col-md-12"><img src="css/images/sportex.jpg" alt="Sportex Safety Website"></div>
       <div class="group1 mx-auto col-md-12 container-fluid">
         <h5 class="text-center col-md-12">Sportex Safety</h5>
-        <!--<div class="logo-group row no-gutters justify-content-around">
+        <div class="logo-group row no-gutters justify-content-around">
           <img src="css/images/bootstrap.png" alt="" class="lang-logo col-2">
           <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
           <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
           <img src="css/images/jquery.png" alt="" class="lang-logo col-4 my-auto">
           <img src="css/images/wp-logo.png" alt="" class="lang-logo col-2">
-        </div>-->
+        </div>
+      </div>-->
+      <div class="project-background">
+        <div class="project-text">
+          <h5>Sportex Safety</h5>
+        </div>
       </div>
     </div>
 
-    <div class="jumbotron col-md-3 col-12 my-3 col-my-5-md example row" style="background: rgb(245, 245, 245)" onclick="showOverlay('screensaver-overlay')">
+    <!--<div class="jumbotron col-md-3 col-12 my-3 col-my-5-md example row" style="background: rgb(245, 245, 245)" onclick="showOverlay('screensaver-overlay')">
       <div class="media placeholder col-md-12"><img src="css/images/screenSaver.jpg" alt="Screensaver web page"></div>
       <div class="group1 mx-auto col-md-12 container-fluid">
         <h5 class="text-center col-12">Screensaver</h5>
-        <!--<div class="logo-group row no-gutters justify-content-around">
+        <div class="logo-group row no-gutters justify-content-around">
           <img src="css/images/php-logo.png" alt="" class="lang-logo col-4">
           <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
           <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
           <img src="css/images/jquery.png" alt="" class="lang-logo col-4 my-auto">
-        </div>-->
+        </div>
       </div>
-    </div>
+    </div>-->
   
   </div>
   <!--Contact-->

@@ -13,7 +13,7 @@
 }
 
 html {
-  background-color: teal;
+  background-color: #f0f0f0;
   min-height: 100%;
   display: block;
   overflow-x: hidden;
@@ -36,11 +36,17 @@ html {
 #menu {
   z-index: 10;
   width: 0vw;
-  height: 100vh;
+  height: 5vh;
   background-color: #b4b4b4;
   position: fixed;
   transition: width 1s;
   display: block;
+}
+#menu .menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
 }
 #menu #close {
   position: absolute;
@@ -80,13 +86,12 @@ html {
 
 #landing {
   z-index: 1;
-  background-image: url("laptopBW.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("./images/engineer.svg");
+  background-size: 25vw;
+  background-position: bottom;
   background-repeat: no-repeat;
   display: block;
   min-height: 93vh;
-  color: gainsboro;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 #landing a {
@@ -128,7 +133,6 @@ html {
 }
 
 .page {
-  background-color: #969696;
   min-height: 100vh;
 }
 
@@ -136,8 +140,8 @@ html {
   padding-top: 4em;
   font-size: 1.2em;
   z-index: 1;
-  background: #656565;
-  background: linear-gradient(180deg, #656565 0%, #969696 41%, #dddddd 85%);
+  margin-top: 0px;
+  background: linear-gradient(180deg, orange 33%, rgba(0, 0, 0, 0) 33%);
 }
 #about img {
   margin-right: auto;
@@ -172,7 +176,6 @@ html {
   position: relative;
   padding-top: 5vh;
   font-family: "Arial Black", Gadget, sans-serif;
-  background-color: #DDD;
 }
 #work h2 {
   font-size: 28px;
@@ -186,8 +189,35 @@ html {
 #work .example {
   transition: all 0.5s ease-in-out;
   padding: 0;
-  padding-bottom: 1.5vh;
-  width: 95vw;
+  height: 40vh;
+  overflow: hidden;
+}
+#work .example .project-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+#work .example .project-text p {
+  width: 65%;
+}
+#work .example .project-background {
+  height: 100%;
+  width: 100%;
+}
+#work .example .project-background:hover {
+  transform: scale(1.2);
+}
+#work .example .project-background button {
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+#work .example .project-background button:hover {
+  background-color: paleturquoise;
 }
 #work .example .placeholder {
   display: block;
@@ -209,6 +239,28 @@ html {
 #work .example .col-md-9 {
   flex-grow: 1;
   transition: all 0.5s ease;
+}
+
+#project-campaign-builder .project-background {
+  background-image: url("./images/campaignbuilder.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#project-campaign-builder:hover .project-text {
+  background-color: rgba(80, 80, 80, 0.8);
+  opacity: 1;
+}
+
+#project-sportex-safety .project-background {
+  background-image: url("./images/sportex.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#project-sportex-safety:hover .project-text {
+  background-color: rgba(80, 80, 80, 0.8);
+  opacity: 1;
 }
 
 .overlay {
