@@ -87,15 +87,17 @@ html {
 #landing {
   z-index: 1;
   background-image: url("./images/engineer.svg");
-  background-size: 25vw;
+  background-size: 50vh;
   background-position: bottom;
   background-repeat: no-repeat;
   display: block;
   min-height: 93vh;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 #landing a {
-  color: gainsboro !important;
+  color: #9b9b9b;
+}
+#landing a:hover {
+  color: orange;
 }
 #landing ul {
   position: absolute;
@@ -104,22 +106,9 @@ html {
 }
 #landing ul li {
   display: inline-block;
-  color: gainsboro;
-}
-#landing ul a:link {
-  color: gainsboro;
 }
 #landing ul a:hover {
-  color: #969696 !important;
-}
-#landing .resume-btn {
-  background-color: #303030;
-  padding: 10px;
-  width: fit-content;
-  margin: auto;
-  margin-top: 10vh;
-  border: 1px solid white;
-  border-radius: 5px;
+  color: orange;
 }
 
 #intro {
@@ -127,9 +116,15 @@ html {
   padding-right: 2em;
   padding-top: 30vh;
   height: 75vh;
-  width: 75vw;
+  width: 95vw;
   z-index: 1;
   text-align: center;
+}
+#intro h1 {
+  font-size: 1.8em;
+}
+#intro h5 {
+  font-size: 1.2em;
 }
 
 .page {
@@ -143,11 +138,17 @@ html {
   margin-top: 0px;
   background: linear-gradient(180deg, orange 33%, rgba(0, 0, 0, 0) 33%);
 }
-#about img {
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 0.5em;
-  display: block;
+#about .about-container {
+  width: 90vw;
+  min-height: 45vh;
+  margin: auto;
+  background-color: white;
+  border: solid lightgrey 0.5px;
+}
+@media screen and (min-width: 900px) {
+  #about .about-container {
+    width: 45vw;
+  }
 }
 #about #interests {
   padding-left: 0;
@@ -155,20 +156,17 @@ html {
   margin-left: auto;
 }
 #about #interests p {
-  font-size: 1.5em;
+  font-size: 18px;
   padding-left: 1em;
   margin-left: 0;
   margin-bottom: 0;
 }
 #about #interests #topHalf {
-  border-top: solid #808080 2px;
-  border-right: solid #808080 2px;
   z-index: 0;
 }
 #about #interests #botHalf {
-  border-bottom: solid #404040 2px;
-  border-left: solid #404040 2px;
   z-index: 0;
+  width: 100%;
 }
 
 #work {

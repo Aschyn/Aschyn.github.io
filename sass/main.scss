@@ -79,18 +79,17 @@ html{
 #landing{
   z-index:1;
   background-image: url("./images/engineer.svg");
-  background-size: 25vw;
+  background-size: 50vh;
   background-position: bottom;
   background-repeat: no-repeat;
   display:block;
   min-height: 93vh;
-  text-shadow:
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
+
   a{
-    color:rgb(220,220,220) !important;
+    color:rgb(155, 155, 155);
+    &:hover{
+      color: orange;
+    }
   }
   ul{
     position: absolute;
@@ -98,23 +97,10 @@ html{
     right:10px;
     li{
       display: inline-block;
-      color:rgb(220,220,220);
-    }
-    a:link{
-      color:rgb(220, 220, 220);
     }
     a:hover{
-      color:rgb(150,150,150) !important;
+      color:orange;
     }
-  }
-  .resume-btn{
-    background-color: #303030;
-    padding: 10px;
-    width: fit-content;
-    margin: auto;
-    margin-top: 10vh;
-    border: 1px solid white;
-    border-radius: 5px;
   }
 }
 
@@ -123,9 +109,15 @@ html{
   padding-right: 2em;
   padding-top:30vh;
   height: 75vh;
-  width: 75vw;
+  width: 95vw;
   z-index: 1;
   text-align: center;
+  h1{
+    font-size: 1.8em;
+  }
+  h5{
+    font-size: 1.2em;
+  }
 }
 .page{
   min-height:100vh;
@@ -138,32 +130,37 @@ html{
   background: linear-gradient(180deg, orange 33%, rgba(0, 0, 0, 0) 33%);
   //background: rgb(101,101,101);
   //background: linear-gradient(180deg, rgba(101,101,101,1) 0%, rgba(150,150,150,1) 41%, rgba(221,221,221,1) 85%);
- img{
-   margin-right:auto;
-   margin-left: auto;
-   margin-bottom: .5em;
-   display: block;
- }
+  .about-container{
+    width: 90vw;
+    min-height: 45vh;
+    margin: auto;
+    background-color: white;
+    border: solid lightgrey .5px;
+    @media screen and (min-width: 900px) {
+      width: 45vw;
+    }
+  }
  #interests{
    padding-left: 0;
    margin-right:auto;
    margin-left:auto;
 
    p{
-     font-size: 1.5em;
+     font-size: 18px;
      padding-left: 1em;
      margin-left: 0;
      margin-bottom: 0;
    }
   #topHalf{
-    border-top: solid #808080 2px;
-    border-right: solid #808080 2px;
+    //border-top: solid #808080 2px;
+    //border-right: solid #808080 2px;
     z-index: 0;
   }
   #botHalf{
-    border-bottom: solid #404040 2px;
-    border-left: solid #404040 2px;
+    //border-bottom: solid #404040 2px;
+    //border-left: solid #404040 2px;
     z-index: 0;
+    width: 100%;
 
   }
  }
