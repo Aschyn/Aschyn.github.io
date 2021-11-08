@@ -13,7 +13,7 @@
 }
 
 html {
-  background-color: teal;
+  background-color: #f0f0f0;
   min-height: 100%;
   display: block;
   overflow-x: hidden;
@@ -36,11 +36,17 @@ html {
 #menu {
   z-index: 10;
   width: 0vw;
-  height: 100vh;
+  height: 5vh;
   background-color: #b4b4b4;
   position: fixed;
   transition: width 1s;
   display: block;
+}
+#menu .menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
 }
 #menu #close {
   position: absolute;
@@ -80,17 +86,18 @@ html {
 
 #landing {
   z-index: 1;
-  background-image: url("laptopBW.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("./images/engineer.svg");
+  background-size: 50vh;
+  background-position: bottom;
   background-repeat: no-repeat;
   display: block;
-  min-height: 100vh;
-  color: gainsboro;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  min-height: 93vh;
 }
 #landing a {
-  color: gainsboro !important;
+  color: #9b9b9b;
+}
+#landing a:hover {
+  color: orange;
 }
 #landing ul {
   position: absolute;
@@ -99,35 +106,28 @@ html {
 }
 #landing ul li {
   display: inline-block;
-  color: gainsboro;
-}
-#landing ul a:link {
-  color: gainsboro;
 }
 #landing ul a:hover {
-  color: #969696 !important;
-}
-#landing .resume-btn {
-  background-color: #303030;
-  padding: 10px;
-  width: fit-content;
-  margin: auto;
-  margin-top: 10vh;
-  border: 1px solid white;
-  border-radius: 5px;
+  color: orange;
 }
 
 #intro {
   padding-left: 3em;
   padding-right: 2em;
   padding-top: 30vh;
-  height: 100vh;
+  height: 75vh;
+  width: 95vw;
   z-index: 1;
   text-align: center;
 }
+#intro h1 {
+  font-size: 1.8em;
+}
+#intro h5 {
+  font-size: 1.2em;
+}
 
 .page {
-  background-color: #969696;
   min-height: 100vh;
 }
 
@@ -135,12 +135,20 @@ html {
   padding-top: 4em;
   font-size: 1.2em;
   z-index: 1;
+  margin-top: 0px;
+  background: linear-gradient(180deg, orange 33%, rgba(0, 0, 0, 0) 33%);
 }
-#about img {
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 0.5em;
-  display: block;
+#about .about-container {
+  width: 90vw;
+  min-height: 45vh;
+  margin: auto;
+  background-color: white;
+  border: solid lightgrey 0.5px;
+}
+@media screen and (min-width: 900px) {
+  #about .about-container {
+    width: 45vw;
+  }
 }
 #about #interests {
   padding-left: 0;
@@ -148,20 +156,27 @@ html {
   margin-left: auto;
 }
 #about #interests p {
-  font-size: 1.5em;
+  font-size: 18px;
   padding-left: 1em;
   margin-left: 0;
   margin-bottom: 0;
 }
 #about #interests #topHalf {
-  border-top: solid #808080 2px;
-  border-right: solid #808080 2px;
   z-index: 0;
 }
 #about #interests #botHalf {
-  border-bottom: solid #404040 2px;
-  border-left: solid #404040 2px;
   z-index: 0;
+  width: 100%;
+}
+#about .skills {
+  width: 100%;
+  min-height: 25vh;
+  margin-top: 5vh;
+}
+#about .skills .icon {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
 }
 
 #work {
@@ -170,12 +185,52 @@ html {
   padding-top: 5vh;
   font-family: "Arial Black", Gadget, sans-serif;
 }
+#work h2 {
+  font-size: 28px;
+}
 #work .jumbotron {
-  box-shadow: 5px 10px #888888;
+  box-shadow: 3px 5px #888888;
+}
+#work .jumbotron:hover {
+  box-shadow: 5px 8px #888888;
 }
 #work .example {
   transition: all 0.5s ease-in-out;
-  padding-top: 2em;
+  padding: 0;
+  height: 40vh;
+  overflow: hidden;
+}
+#work .example .project-text {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  color: white;
+}
+#work .example .project-text p {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 12px;
+}
+#work .example .project-background {
+  height: 100%;
+  width: 100%;
+}
+#work .example .project-background:hover {
+  transform: scale(1.2);
+}
+#work .example .project-background button {
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+#work .example .project-background button:hover {
+  background-color: orange;
 }
 #work .example .placeholder {
   display: block;
@@ -183,7 +238,7 @@ html {
   z-index: 2;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 3vh;
+  margin-top: 1.5vh;
 }
 #work .example .placeholder img {
   position: relative;
@@ -199,6 +254,28 @@ html {
   transition: all 0.5s ease;
 }
 
+#project-campaign-builder .project-background {
+  background-image: url("./images/campaignbuilder.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#project-campaign-builder:hover .project-text {
+  background-color: rgba(80, 80, 80, 0.8);
+  opacity: 1;
+}
+
+#project-sportex-safety .project-background {
+  background-image: url("./images/sportex.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#project-sportex-safety:hover .project-text {
+  background-color: rgba(80, 80, 80, 0.8);
+  opacity: 1;
+}
+
 .overlay {
   position: fixed;
   z-index: 100;
@@ -212,9 +289,19 @@ html {
   margin: auto;
   font-family: "Arial", Gadget, sans-serif;
 }
+.overlay h3 {
+  height: min-content;
+}
+.overlay .overlay-card {
+  height: 70%;
+}
+@media screen and (min-width: 900px) {
+  .overlay .overlay-card {
+    height: 100%;
+  }
+}
 .overlay div .inner-content {
   height: 100%;
-  font-size: 1.25rem;
 }
 .overlay div .inner-content div {
   display: block;
@@ -265,7 +352,7 @@ html {
   border-color: #e6e6e6;
 }
 #contact button:hover {
-  background-color: #969696;
+  background-color: orange;
   border-color: #e6e6e6;
 }
 

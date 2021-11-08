@@ -12,7 +12,7 @@
   transition: all .5s ease-in-out;
 }
 html{
-  background-color:teal;
+  background-color: rgb(240, 240, 240);
   min-height: 100%;
   display: block;
   overflow-x: hidden;
@@ -34,12 +34,17 @@ html{
 #menu{
   z-index: 10;
   width: 0vw;
-  height: 100vh;
+  height: 5vh;
   background-color: rgb(180, 180, 180);
   position: fixed;
   transition: width 1s;
   display: block;
-
+  .menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+  }
   #close{
     position:absolute;
     font-size: 2em;
@@ -73,20 +78,18 @@ html{
 }
 #landing{
   z-index:1;
-  background-image: url("laptopBW.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url("./images/engineer.svg");
+  background-size: 50vh;
+  background-position: bottom;
   background-repeat: no-repeat;
   display:block;
-  min-height: 100vh;
-  color:rgb(220,220,220);
-  text-shadow:
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
+  min-height: 93vh;
+
   a{
-    color:rgb(220,220,220) !important;
+    color:rgb(155, 155, 155);
+    &:hover{
+      color: orange;
+    }
   }
   ul{
     position: absolute;
@@ -94,23 +97,10 @@ html{
     right:10px;
     li{
       display: inline-block;
-      color:rgb(220,220,220);
-    }
-    a:link{
-      color:rgb(220, 220, 220);
     }
     a:hover{
-      color:rgb(150,150,150) !important;
+      color:orange;
     }
-  }
-  .resume-btn{
-    background-color: #303030;
-    padding: 10px;
-    width: fit-content;
-    margin: auto;
-    margin-top: 10vh;
-    border: 1px solid white;
-    border-radius: 5px;
   }
 }
 
@@ -118,47 +108,71 @@ html{
   padding-left: 3em;
   padding-right: 2em;
   padding-top:30vh;
-  height: 100vh;
+  height: 75vh;
+  width: 95vw;
   z-index: 1;
   text-align: center;
+  h1{
+    font-size: 1.8em;
+  }
+  h5{
+    font-size: 1.2em;
+  }
 }
 .page{
-  background-color: rgb(150, 150, 150);
   min-height:100vh;
-
 }
 #about{
   padding-top:4em;
   font-size: 1.2em;
   z-index: 1;
- img{
-   margin-right:auto;
-   margin-left: auto;
-   margin-bottom: .5em;
-   display: block;
- }
+  margin-top: 0px;
+  background: linear-gradient(180deg, orange 33%, rgba(0, 0, 0, 0) 33%);
+  //background: rgb(101,101,101);
+  //background: linear-gradient(180deg, rgba(101,101,101,1) 0%, rgba(150,150,150,1) 41%, rgba(221,221,221,1) 85%);
+  .about-container{
+    width: 90vw;
+    min-height: 45vh;
+    margin: auto;
+    background-color: white;
+    border: solid lightgrey .5px;
+    @media screen and (min-width: 900px) {
+      width: 45vw;
+    }
+  }
  #interests{
    padding-left: 0;
    margin-right:auto;
    margin-left:auto;
 
    p{
-     font-size: 1.5em;
+     font-size: 18px;
      padding-left: 1em;
      margin-left: 0;
      margin-bottom: 0;
    }
   #topHalf{
-    border-top: solid #808080 2px;
-    border-right: solid #808080 2px;
+    //border-top: solid #808080 2px;
+    //border-right: solid #808080 2px;
     z-index: 0;
   }
   #botHalf{
-    border-bottom: solid #404040 2px;
-    border-left: solid #404040 2px;
+    //border-bottom: solid #404040 2px;
+    //border-left: solid #404040 2px;
     z-index: 0;
+    width: 100%;
 
   }
+ }
+ .skills{
+   width: 100%;
+   min-height: 25vh;
+   margin-top: 5vh;
+   .icon{
+     width: 50px;
+     height: 50px;
+     overflow: hidden;
+   }
  }
 }
 #work{
@@ -166,19 +180,59 @@ html{
   position: relative;
   padding-top:5vh;
   font-family: "Arial Black", Gadget, sans-serif;
+  h2{
+    font-size: 28px;;
+  }
   .jumbotron{
-    box-shadow: 5px 10px #888888;
+    box-shadow: 3px 5px #888888;
+    &:hover{
+      box-shadow: 5px 8px #888888;
+    }
   }
   .example{
     transition: all .5s ease-in-out;
-    padding-top: 2em;
+    padding: 0;
+    height: 40vh;
+    overflow: hidden;
+    .project-text{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: all .5s ease-in-out;
+      color: white;
+      p{
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+    .project-background{
+      height: 100%;
+      width: 100%;
+      &:hover{
+        transform: scale(1.2);
+      }
+      button{
+        border-radius: 10px;
+        transition: all .5s ease;
+        &:hover{
+          background-color: orange;
+        }
+      }
+    }
     .placeholder{
       display:block;
       position: relative;
       z-index: 2;
       margin-right: auto;
       margin-left: auto;
-      margin-top: 3vh;
+      margin-top: 1.5vh;
       img{
         position: relative;
         height:100%;
@@ -195,6 +249,34 @@ html{
     }
   }
 }
+#project-campaign-builder{
+  .project-background{
+    background-image: url('./images/campaignbuilder.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &:hover{
+    .project-text{
+      background-color: rgba(80, 80, 80, .8);
+      opacity:  1;
+    }
+  }
+}
+#project-sportex-safety{
+  .project-background{
+    background-image: url('./images/sportex.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &:hover{
+    .project-text{
+      background-color: rgba(80, 80, 80, .8);
+      opacity: 1;
+    }
+  }
+}
 .overlay{
   position: fixed;
   z-index: 100;
@@ -204,10 +286,18 @@ html{
   left: 0;right: 0;top: 0;bottom: 0;
   margin: auto;
   font-family: "Arial", Gadget, sans-serif;
+  h3{
+    height: min-content;
+  }
+  .overlay-card{
+    height: 70%;
+    @media screen and (min-width: 900px) {
+      height: 100%;
+    }
+  }
   div{
     .inner-content{
       height:100%;
-      font-size: 1.25rem;
       div{
         display:block;
         position: relative;
@@ -256,7 +346,7 @@ html{
     background-color: rgb(100, 100, 100);
     border-color: rgb(230, 230, 230);
     &:hover{
-      background-color:  rgb(150, 150, 150);
+      background-color: orange;
       border-color: rgb(230, 230, 230);
     }
   }

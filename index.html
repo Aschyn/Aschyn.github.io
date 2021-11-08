@@ -8,144 +8,70 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!--[if lt IE 9]>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
 </script>
 <![endif]-->
 <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/main.js"></script>
+<!--<script src="js/main.js"></script>-->
 </head>
 <body>
-  <div class="tint-overlay"></div>
-  <div class="overlay d-none jumbotron pb-5 pt-2 mx-auto example row" style="background: rgb(245, 245, 245)" id="stargazer-overlay">
-    <h3 class="text-center col-1 offset-11 close-ovelay" onclick="hideOverlay('stargazer-overlay')">X</h3>
-    <h3 class="text-center col-12">Stargazer Studios Photography</h3>
-    <div class="row">
-      <div class="inner-content">
-      <div class=" col-md-6"><a href="http://www.stargazerstudiosphotography.com"><img src="css/images/stargazer.jpg" alt="Stargazer Studios Photography Website"></a></div>
-      <div class="mx-auto col-md-12 container-fluid">
-        <div class="mt-2 mb-0 text-center"><p>A photographer needed a website to show potential clients some of their previous work. This site is built
-          on Wordpress and customized to easily update the gallery using advance custom fields. I had to make it as user friendly as possible and create unique options
-          for the photographer to understand how to update the site without much guidance.
-        </p></div>
-      </div>
-      </div>
-    </div>
-  </div>
-  <div class="overlay d-none jumbotron pb-5 pt-2 mx-auto example row" style="background: rgb(245, 245, 245)" id="mtg-overlay">
-    <h3 class="text-center col-1 offset-11 close-ovelay" onclick="hideOverlay('mtg-overlay')">X</h3>
-    <h3 class="text-center col-12">Morris Theatre Guild</h3>
-    <div class="row">
-      <div class="inner-content">
-      <div class=" col-md-6"><a href="http://www.mtg.lat41.org"><img src="css/images/mtg.jpg" alt="Morris Theatre Guild Website"></a></div>
-      <div class="mx-auto col-md-12 container-fluid">
-        <div class="mt-2 mb-0 text-center"><p>Wordpress website built for a local theatre group in Morris, IL. I developed a theme for content to be
-          easily added or removed by their members without the need to in-depth technical knowledge. This project pushed me into the deep end,
-          forcing me to learn Wordpress on the fly.
-        </p></div>
-      </div>
-      </div>
-    </div>
-  </div>
-  <div class="overlay d-none jumbotron pb-5 pt-2 mx-auto example row" style="background: rgb(245, 245, 245)" id="screensaver-overlay">
-    <h3 class="text-center col-1 offset-11 close-ovelay" onclick="hideOverlay('screensaver-overlay')">X</h3>
-    <h3 class="text-center col-12">Screensaver With Calendar</h3>
-    <div class="row">
-      <div class="inner-content">
-      <div class=" col-md-6"><a href="https://github.com/Aschyn/ScreenSaver"><img src="css/images/screenSaver.jpg" alt="Screensaver"></a></div>
-      <div class="mx-auto col-md-12 container-fluid">
-        <div class="mt-2 mb-0 text-center"><p>After building a DIY smart-fridge monitor, I wanted to challenge myself with a PHP project.
-          The goal of this was to display the time and weather, as well as the ability to show color-coded events from multiple calendars.
-          This is my first PHP project and my first time working with and traversing ICAL(.ics) files.
-        </p></div>
-      </div>
-      </div>
-    </div>
-  </div>
-  <!--MENU-->
-  <header>
-    <div id="menu_open" onclick="openMenu()"><i class="fas fa-bars"></i></div>
-    <div id="menu">
-      <div id="close" onclick="closeMenu()"><i class="fas fa-window-close"></i></div>
-      <a href="#about" ><div class="item" id="choiceAbout" onclick="closeMenu()">About</div></a>
-      <a href="#work"><div class="item" id="choiceWork" onclick="closeMenu()">Work</div></a>
-      <a href="#contact"><div class="item" id="choiceContact" onclick="closeMenu()">Contact</div></a>
-    </div>
-  </header>
   <!--Landing Page-->
-  <div id="landing">
+  <div id="landing" class="page">
       <ul class=" mx-auto">
         <li><a href="https://www.linkedin.com/in/garrick-griffith/"><i class="fab fa-linkedin fa-2x "></i></a></li>
         <li><a href="https://codepen.io/Aschyn/"><i class="fab fa-codepen fa-2x ml-2 mr-2"></i></a></li>
         <li><a href="https://github.com/Garrick-G"><i class="fab fa-github fa-2x"></i></a></li>
       </ul>
       <div class="d-block mx-auto" id="intro">
-        <h1><b>My name is Garrick</b></h1><h5><b>Web Developer and Problem Solver.</b></h5>
-        <div class="resume-btn" ><a href="GarrickG_Resume.pdf" download>Résumé</a></div>
+        <h1>Garrick Griffith</h1>
+        <h5>Web Developer & Problem Solver</h5>
       </div>
   </div>
   <!--About-->
   <div class="page" id="about">
-    <img src="css/images/portrait.jpg" alt="photo of author" class="rounded-circle">
-    <div class="container-fluid">
+    <div class="about-container jumbotron">
       <div  class="row" id="interests">
-        <p class="col-xs-12" id="topHalf"><b>
-          I create responsive websites using knowledge I've gained through education, my front-end certifications (with Udacity and FreeCodeCamp),
-          and self teaching. I have experience in the general front-end languages as well as jquery, SASS, and Bootstrap.
-          My personal and professional experience also extends to PHP and Wordpress.</b></p>
-          <p class="col-xs-12" id="botHalf"> <b>Being a geek, I am surrounded by and tinkering with technology most of the day, if I'm not fishing. I'm
-            eager to continue my journey and expand my knowledge of web development and everything involved.
-        </b></p>
+        <h2 class="mx-auto text-center py-5">Hi, My Name is Garrick!</h2>
+        <p class="col-xs-12" id="topHalf">
+          I am a web developer / professional googler currently based in Arizona.
+          If you don't see me coding or gaming, look at the nearest pond to find me fishing.
+          Currently a web developer at Sportex Safety, working on Magento powered sites and React Apps.
+          <br><br>
+         <b >Give me an environment to learn and grow, and I will thrive!</b></p>
+        <div class="col-12 jumbotron skills text-center">
+          <h5>Current Frequently Used Technologies</h5>
+          <p>HTML5, CSS3, JavaScript/ES6, React, Bootstrap, Magento, PHP</p>
+        </div>
      </div>
   </div>
 </div>
   <!--Work-->
-  <div class="page container-fluid pb-2 pt-5 row justify-content-around mx-0" id="work">
-    <h2 class="text-center col-12 mb-5"><b>Some of My Work</b></h2>
-    <div class="jumbotron col-md-5 col-10 my-5 example row" style="background: rgb(245, 245, 245)" onclick="showOverlay('stargazer-overlay')">
-      <h3 class="text-center col-md-12">Stargazer Studios Photography</h3>
-      <div class="row col-md-12 justify-content-around mx-0">
-      <div class="media placeholder col-md-8"><img src="css/images/stargazer.jpg" alt="Stargazer Studios Photography website"></div>
-      <div class="group1 mx-auto col-md-12 container-fluid">
-      <div class="logo-group row no-gutters justify-content-around">
-        <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
-        <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
-        <img src="css/images/jquery.png" alt="" class="lang-logo col-4 my-auto">
-        <img src="css/images/wp-logo.png" alt="" class="lang-logo col-2">
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="jumbotron col-md-5 col-10 my-5 example row" style="background: rgb(245, 245, 245)" onclick="showOverlay('mtg-overlay')">
-      <h3 class="text-center col-md-12">Morris Theatre Guild</h3>
-      <div class="row col-md-12 justify-content-around mx-0">
-      <div class="media placeholder col-md-8"><img src="css/images/mtg.jpg" alt="Morris Theatre Guild Website"></div>
-      <div class="group1 mx-auto col-md-12 container-fluid">
-      <div class="logo-group row no-gutters justify-content-around">
-        <img src="css/images/bootstrap.png" alt="" class="lang-logo col-2">
-        <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
-        <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
-        <img src="css/images/jquery.png" alt="" class="lang-logo col-4 my-auto">
-        <img src="css/images/wp-logo.png" alt="" class="lang-logo col-2">
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="jumbotron col-md-5 col-10 example row my-5" style="background: rgb(245, 245, 245)" onclick="showOverlay('screensaver-overlay')">
-      <h3 class="text-center col-12">Screensaver</h3>
-      <div class="row col-md-12 justify-content-around mx-0">
-      <div class="media placeholder col-md-8"><img src="css/images/screenSaver.jpg" alt="Screensaver web page"></div>
-      <div class="group1 mx-auto col-md-12 container-fluid">
-        <div class="logo-group row no-gutters justify-content-around">
-          <img src="css/images/php-logo.png" alt="" class="lang-logo col-4">
-          <img src="css/images/HTML5-logo.png" alt="" class="lang-logo col-2">
-          <img src="css/images/CSS-logo.png" alt="" class="lang-logo col-2">
-          <img src="css/images/jquery.png" alt="" class="lang-logo col-4 my-auto">
+  <div class="page container-fluid pb-5 pt-5 row justify-content-around mx-0" id="work">
+    <h2 class="text-center text-md-left col-12 mb-5"><b>Some of My Work</b></h2>
+
+    <div class=" col-md-3 col-12 my-3 col-my-5-md example row jumbotron" id="project-campaign-builder">
+        <div class="project-background">
+          <div class="project-text">
+            <h5>Campaign Builder</h5>
+            <p>React app built for corporate and bulk ordering of campaign items.</p>
+            <button onclick="window.open('https://campaign.sportexsafety.com/breastcancer')">Visit Website ></button>
+          </div>
         </div>
     </div>
+
+    <div class="jumbotron col-md-3 col-12 my-3 col-my-5-md example row" id="project-sportex-safety" onclick="//showOverlay('sportex-overlay')">
+      <div class="project-background">
+        <div class="project-text">
+          <h5>Sportex Safety</h5>
+          <p>Main Website and E-Store for Sportex Safety, currently with over 100 substores and counting.</p>
+          <button onclick="window.open('https://www.sportexsafety.com/')">Visit Website ></button>
+        </div>
+      </div>
     </div>
-    </div>
+  
   </div>
   <!--Contact-->
   <div class="page text-center" id="contact">
