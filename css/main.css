@@ -168,6 +168,16 @@ html {
   z-index: 0;
   width: 100%;
 }
+#about .skills {
+  width: 100%;
+  min-height: 25vh;
+  margin-top: 5vh;
+}
+#about .skills .icon {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
 
 #work {
   min-height: auto;
@@ -199,9 +209,14 @@ html {
   align-items: center;
   opacity: 0;
   transition: all 0.5s ease-in-out;
+  color: white;
 }
 #work .example .project-text p {
   width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 12px;
 }
 #work .example .project-background {
   height: 100%;
@@ -215,7 +230,7 @@ html {
   transition: all 0.5s ease;
 }
 #work .example .project-background button:hover {
-  background-color: paleturquoise;
+  background-color: orange;
 }
 #work .example .placeholder {
   display: block;
@@ -337,7 +352,7 @@ html {
   border-color: #e6e6e6;
 }
 #contact button:hover {
-  background-color: #969696;
+  background-color: orange;
   border-color: #e6e6e6;
 }
 
