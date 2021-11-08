@@ -114,9 +114,16 @@ html{
   text-align: center;
   h1{
     font-size: 1.8em;
+    font-weight: bold;
+    @media screen and (min-width: 425px) {
+      font-size: 2.8em;
+    }
   }
-  h5{
+  h2{
     font-size: 1.2em;
+    @media screen and (min-width: 425px) {
+      font-size: 2em;
+    }
   }
 }
 .page{

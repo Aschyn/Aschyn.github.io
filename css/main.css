@@ -122,9 +122,20 @@ html {
 }
 #intro h1 {
   font-size: 1.8em;
+  font-weight: bold;
 }
-#intro h5 {
+@media screen and (min-width: 425px) {
+  #intro h1 {
+    font-size: 2.8em;
+  }
+}
+#intro h2 {
   font-size: 1.2em;
+}
+@media screen and (min-width: 425px) {
+  #intro h2 {
+    font-size: 2em;
+  }
 }
 
 .page {
